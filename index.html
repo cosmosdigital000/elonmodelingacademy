@@ -411,44 +411,41 @@ tailwind.config = {
         </div>
       </div>
 
-      <!-- Right: Visual -->
+      <!-- Right: Student Photo Collage -->
       <div class="relative fade-up fade-up-delay-2">
+        <!-- Main large portrait -->
         <div class="relative" style="aspect-ratio: 3/4;">
-          <!-- Decorative frame -->
-          <div class="absolute -top-4 -left-4 w-full h-full border border-gold/20"></div>
-          <div class="absolute -bottom-4 -right-4 w-full h-full border border-gold/10"></div>
-          <div class="w-full h-full flex items-center justify-center" style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(26,26,26,0.9)); border: 1px solid rgba(201,168,76,0.2);">
-            <div class="text-center p-12">
-              <div class="font-display text-9xl font-thin gold-grad mb-4">A</div>
-              <div class="gold-line w-24 mx-auto mb-4"></div>
-              <div class="section-label text-gold/50">Arya Verma</div>
-              <div class="font-sans font-thin text-ivory/30 text-xs tracking-widest mt-1">PRESENTING</div>
-              <div class="mt-6 space-y-2">
-                <div class="flex items-center justify-center gap-2">
-                  <div class="w-1 h-1 rounded-full bg-gold/40"></div>
-                  <span class="font-sans font-thin text-ivory/40 text-xs tracking-wider">5 Years Experience</span>
-                </div>
-                <div class="flex items-center justify-center gap-2">
-                  <div class="w-1 h-1 rounded-full bg-gold/40"></div>
-                  <span class="font-sans font-thin text-ivory/40 text-xs tracking-wider">Fashion Event Organiser</span>
-                </div>
-                <div class="flex items-center justify-center gap-2">
-                  <div class="w-1 h-1 rounded-full bg-gold/40"></div>
-                  <span class="font-sans font-thin text-ivory/40 text-xs tracking-wider">Model Trainer & Director</span>
-                </div>
-              </div>
+          <div class="absolute -top-4 -left-4 w-full h-full border border-gold/20 pointer-events-none"></div>
+          <div class="absolute -bottom-4 -right-4 w-full h-full border border-gold/10 pointer-events-none"></div>
+          <div class="w-full h-full overflow-hidden" style="border: 1px solid rgba(201,168,76,0.25);">
+            <img src="first_student_giving_pose.png"
+                 alt="Elon Modeling Academy student in a modeling pose"
+                 class="w-full h-full object-cover"
+                 style="filter: contrast(1.05) saturate(0.9); transition: transform 0.8s ease;"
+                 onmouseover="this.style.transform='scale(1.04)'"
+                 onmouseout="this.style.transform='scale(1)'"/>
+            <!-- Gold gradient overlay at bottom -->
+            <div class="absolute bottom-0 left-0 right-0 h-1/3" style="background: linear-gradient(0deg, rgba(10,10,10,0.7) 0%, transparent 100%);"></div>
+            <div class="absolute bottom-6 left-6">
+              <div class="section-label mb-1" style="font-size:0.55rem; color:rgba(201,168,76,0.8);">Elon Student</div>
+              <div class="font-display text-ivory text-sm font-light tracking-widest">Training Session · Varanasi</div>
             </div>
           </div>
         </div>
 
+        <!-- Floating second student thumbnail -->
+        <div class="absolute -bottom-8 -right-8 w-36 h-44 overflow-hidden fade-up fade-up-delay-3" style="border: 2px solid rgba(201,168,76,0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+          <img src="second_student_giving_pose.png"
+               alt="Second student modeling pose"
+               class="w-full h-full object-cover"
+               style="filter: contrast(1.05) saturate(0.9);"/>
+          <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 60%, rgba(10,10,10,0.6) 100%);"></div>
+        </div>
+
         <!-- Achievement Tags -->
-        <div class="absolute -top-6 -right-6 glass-card p-3 fade-up">
+        <div class="absolute -top-6 -right-6 glass-card p-3 fade-up" style="z-index:2;">
           <div class="section-label" style="font-size:0.55rem;">Varanasi's Premier</div>
           <div class="font-display text-gold text-lg font-light">Modeling Academy</div>
-        </div>
-        <div class="absolute -bottom-6 -left-6 glass-card p-3 fade-up">
-          <div class="section-label" style="font-size:0.55rem;">Hybrid Training</div>
-          <div class="font-display text-gold text-lg font-light">Online + Offline</div>
         </div>
       </div>
     </div>
@@ -688,56 +685,105 @@ tailwind.config = {
       <div class="gold-line w-48 mx-auto mt-6 fade-up fade-up-delay-2"></div>
     </div>
 
-    <!-- Gallery Grid (Placeholder tiles that feel premium) -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 fade-up">
-      <div class="gallery-tile aspect-square" style="background: linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(26,26,26,0.9) 100%); border: 1px solid rgba(201,168,76,0.12); display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.4s ease; position:relative; overflow:hidden;" onmouseover="this.style.borderColor='rgba(201,168,76,0.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.12)'">
-        <div class="text-center p-4">
-          <div class="font-display text-3xl font-light gold-grad mb-2">✦</div>
-          <div class="section-label" style="font-size:0.5rem;">Ramp Walk Session</div>
+    <!-- Editorial Photo Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-12 gap-3 fade-up" style="grid-auto-rows: 280px;">
+
+      <!-- Col 1–5: Student 1 pose 1 — tall spanning 2 rows -->
+      <div class="col-span-2 md:col-span-5 md:row-span-2 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('first_student_giving_pose.png','Modeling Pose · Training Session')">
+        <img src="first_student_giving_pose.png" alt="Elon Academy Student Modeling Pose" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85);"/>
+        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: linear-gradient(180deg, transparent 40%, rgba(10,10,10,0.85) 100%);"></div>
+        <div class="absolute bottom-0 left-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
+          <div class="section-label mb-1" style="font-size:0.55rem; color:rgba(201,168,76,0.9);">Elon Modeling Academy</div>
+          <div class="font-display text-ivory text-base font-light">Training Session · Varanasi</div>
+        </div>
+        <div class="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-400">
+          <div class="border border-gold/40 px-3 py-1" style="background:rgba(10,10,10,0.6); backdrop-filter:blur(6px);">
+            <span class="font-sans text-gold text-xs tracking-widest">VIEW</span>
+          </div>
         </div>
       </div>
-      <div class="gallery-tile aspect-square row-span-2 col-span-1" style="background: linear-gradient(180deg, rgba(201,168,76,0.1) 0%, rgba(26,26,26,0.95) 100%); border: 1px solid rgba(201,168,76,0.12); display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.4s ease;" onmouseover="this.style.borderColor='rgba(201,168,76,0.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.12)'">
-        <div class="text-center p-4">
-          <div class="font-display text-5xl font-light gold-grad mb-3">E</div>
-          <div class="section-label" style="font-size:0.5rem;">Elon Modeling Academy</div>
-          <div class="font-sans font-thin text-ivory/20 text-xs mt-2">Your Gallery Photos<br/>Will Shine Here</div>
+
+      <!-- Col 6–9: Student 2 pose 1 — top half -->
+      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('second_student_giving_pose.png','Ramp Walk · Academy Floor')">
+        <img src="second_student_giving_pose.png" alt="Elon Academy Second Student Pose" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85); object-position: top;"/>
+        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: rgba(10,10,10,0.4);"></div>
+        <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
+          <div class="font-display text-ivory text-sm font-light">Ramp Walk · Academy Floor</div>
         </div>
       </div>
-      <div class="gallery-tile aspect-square" style="background: linear-gradient(225deg, rgba(201,168,76,0.08) 0%, rgba(26,26,26,0.9) 100%); border: 1px solid rgba(201,168,76,0.12); display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.4s ease;" onmouseover="this.style.borderColor='rgba(201,168,76,0.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.12)'">
+
+      <!-- Col 10–12: Text accent tile -->
+      <div class="col-span-2 md:col-span-3 relative flex items-center justify-center" style="background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(26,26,26,0.95)); border:1px solid rgba(201,168,76,0.2);">
         <div class="text-center p-4">
-          <div class="font-display text-3xl font-light gold-grad mb-2">◆</div>
-          <div class="section-label" style="font-size:0.5rem;">Fashion Event</div>
+          <div class="font-display text-5xl font-light gold-grad mb-2">✦</div>
+          <div class="section-label mb-2" style="font-size:0.55rem;">Student Showcase</div>
+          <div class="font-display text-ivory text-sm font-light leading-snug">Live from the<br/>Academy Floor</div>
         </div>
       </div>
-      <div class="gallery-tile aspect-square" style="background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, rgba(26,26,26,0.9) 100%); border: 1px solid rgba(201,168,76,0.12); display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.4s ease;" onmouseover="this.style.borderColor='rgba(201,168,76,0.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.12)'">
-        <div class="text-center p-4">
-          <div class="font-display text-3xl font-light gold-grad mb-2">◇</div>
-          <div class="section-label" style="font-size:0.5rem;">Photoshoot</div>
+
+      <!-- Col 6–8: Student 1 pose 2 — bottom half of left grid -->
+      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('first_student_giving_pose2.png','Catwalk Practice · Varanasi')">
+        <img src="first_student_giving_pose2.png" alt="Student Catwalk Practice" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85); object-position: center;"/>
+        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: rgba(10,10,10,0.4);"></div>
+        <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
+          <div class="font-display text-ivory text-sm font-light">Catwalk Practice · Varanasi</div>
         </div>
       </div>
-      <div class="gallery-tile aspect-square" style="background: linear-gradient(315deg, rgba(201,168,76,0.1) 0%, rgba(26,26,26,0.9) 100%); border: 1px solid rgba(201,168,76,0.12); display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.4s ease;" onmouseover="this.style.borderColor='rgba(201,168,76,0.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.12)'">
-        <div class="text-center p-4">
-          <div class="font-display text-3xl font-light gold-grad mb-2">△</div>
-          <div class="section-label" style="font-size:0.5rem;">Catwalk Practice</div>
-        </div>
-      </div>
-      <div class="gallery-tile aspect-square" style="background: linear-gradient(45deg, rgba(201,168,76,0.08) 0%, rgba(26,26,26,0.9) 100%); border: 1px solid rgba(201,168,76,0.12); display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.4s ease;" onmouseover="this.style.borderColor='rgba(201,168,76,0.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.12)'">
-        <div class="text-center p-4">
-          <div class="font-display text-3xl font-light gold-grad mb-2">○</div>
-          <div class="section-label" style="font-size:0.5rem;">Pageant Prep</div>
-        </div>
-      </div>
-      <div class="gallery-tile aspect-square col-span-2" style="background: linear-gradient(90deg, rgba(201,168,76,0.08) 0%, rgba(201,168,76,0.04) 50%, rgba(26,26,26,0.9) 100%); border: 1px solid rgba(201,168,76,0.12); display:flex; align-items:center; justify-content:center; cursor:pointer; transition: all 0.4s ease;" onmouseover="this.style.borderColor='rgba(201,168,76,0.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.12)'">
-        <div class="text-center p-4">
-          <div class="section-label mb-2" style="font-size:0.55rem;">Bihar Fashion Week</div>
-          <div class="font-display text-xl font-light text-ivory/30">Elon Events Production</div>
+
+      <!-- Col 9–12: Student 2 pose 2 — wider bottom right -->
+      <div class="col-span-2 md:col-span-3 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('second_student_giving_pose2.png','Pose Training · Elon Academy')">
+        <img src="second_student_giving_pose2.png" alt="Student Pose Training" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85);"/>
+        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: linear-gradient(180deg, transparent 50%, rgba(10,10,10,0.8) 100%);"></div>
+        <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
+          <div class="font-display text-ivory text-sm font-light">Pose Training · Elon Academy</div>
         </div>
       </div>
     </div>
 
-    <p class="text-center mt-6 font-sans font-thin text-ivory/20 text-xs tracking-widest fade-up">
-      Gallery will be updated with real photos from our events and training sessions.
-    </p>
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center" style="background:rgba(0,0,0,0.95); backdrop-filter:blur(20px);" onclick="closeLightbox()">
+      <div class="relative max-w-3xl w-full mx-4" onclick="event.stopPropagation()">
+        <img id="lightboxImg" src="" alt="" class="w-full max-h-screen object-contain" style="border:1px solid rgba(201,168,76,0.2); max-height:80vh;"/>
+        <div id="lightboxCaption" class="mt-4 text-center font-display text-ivory/60 text-sm font-light tracking-widest"></div>
+        <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-ivory/40 hover:text-gold font-sans text-xs tracking-widest uppercase transition-colors">✕ Close</button>
+      </div>
+    </div>
+
+    <style>
+      .gallery-photo-tile img { transition: transform 0.7s ease; }
+      .gallery-photo-tile:hover img { transform: scale(1.06); }
+      .gallery-photo-tile:hover { border-color: rgba(201,168,76,0.45) !important; }
+    </style>
+  </div>
+</section>
+
+<!-- STUDENTS IN ACTION — cinematic full-width strip -->
+<section class="py-0 relative overflow-hidden" style="background: var(--noir);">
+  <div class="relative" style="height: 420px;">
+    <!-- Four images in a horizontal strip with parallax feel -->
+    <div class="absolute inset-0 grid grid-cols-4 gap-0">
+      <div class="relative overflow-hidden">
+        <img src="first_student_giving_pose.png" alt="Student Training" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+      </div>
+      <div class="relative overflow-hidden">
+        <img src="second_student_giving_pose.png" alt="Student Pose" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+      </div>
+      <div class="relative overflow-hidden">
+        <img src="first_student_giving_pose2.png" alt="Catwalk" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+      </div>
+      <div class="relative overflow-hidden">
+        <img src="second_student_giving_pose2.png" alt="Ramp Walk" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+      </div>
+    </div>
+    <!-- Overlay gradient + text -->
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.35) 50%, rgba(10,10,10,0.7) 100%);"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
+      <div class="section-label mb-3 fade-up" style="color:rgba(201,168,76,0.8);">Live from the Academy Floor</div>
+      <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size: clamp(2rem, 5vw, 3.5rem);">Our Students. <em class="gold-grad not-italic">Your Inspiration.</em></h2>
+      <div class="gold-line w-48 mx-auto mt-5 mb-5 fade-up fade-up-delay-2"></div>
+      <p class="font-sans font-thin text-ivory/50 text-xs tracking-widest max-w-lg fade-up fade-up-delay-3" style="letter-spacing:0.15em;">Every pose, every step, every turn — captured right here at Elon Modeling Academy, Varanasi.</p>
+      <button onclick="openEnrollModal()" class="btn-gold mt-8 px-10 py-3 text-xs rounded-none fade-up fade-up-delay-4">Join Them Today</button>
+    </div>
   </div>
 </section>
 
@@ -1299,6 +1345,19 @@ function closeProfile() {
   document.body.style.overflow = '';
 }
 document.getElementById('profileOverlay').addEventListener('click', e => { if (e.target === document.getElementById('profileOverlay')) closeProfile(); });
+
+// LIGHTBOX
+function openLightbox(src, caption) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightboxCaption').textContent = caption;
+  const lb = document.getElementById('lightbox');
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
 
 // NAV ACTIVE SCROLL
 window.addEventListener('scroll', () => {
