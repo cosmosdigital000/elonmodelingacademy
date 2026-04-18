@@ -179,8 +179,55 @@ tailwind.config = {
   .fade-up-delay-4 { transition-delay: 0.4s; }
 
   /* SECTION LABEL */
-  .section-label { font-family: 'Josefin Sans', sans-serif; font-weight: 100; letter-spacing: 0.5em; font-size: 0.65rem; text-transform: uppercase; color: rgba(201,168,76,0.7); }
+  .section-label { font-family: 'Josefin Sans', sans-serif; font-weight: 300; letter-spacing: 0.35em; font-size: 0.78rem; text-transform: uppercase; color: rgba(201,168,76,0.9); }
   .section-title { font-family: 'Cormorant Garamond', serif; font-weight: 300; line-height: 1.05; }
+
+  /* GLOBAL BODY TEXT READABILITY */
+  body { font-size: 1rem; }
+  p { font-weight: 300 !important; color: rgba(250,247,242,0.75) !important; font-size: 0.95rem !important; line-height: 1.9 !important; letter-spacing: 0.04em !important; }
+  .form-label { font-size: 0.78rem !important; letter-spacing: 0.2em; color: rgba(201,168,76,0.95) !important; }
+  .form-input { font-size: 0.95rem !important; }
+  .form-input::placeholder { font-size: 0.9rem; }
+
+  /* STATS BAR */
+  .stat-label-text { font-size: 0.8rem !important; letter-spacing: 0.25em; color: rgba(201,168,76,0.85) !important; }
+
+  /* COURSE CARD BODY TEXT */
+  .course-body { font-size: 0.9rem !important; color: rgba(250,247,242,0.65) !important; line-height: 1.8 !important; }
+  .course-meta { font-size: 0.82rem !important; color: rgba(250,247,242,0.55) !important; }
+  .course-tag { font-size: 0.75rem !important; color: rgba(201,168,76,0.8) !important; }
+
+  /* INSTRUCTOR CARD */
+  .instructor-role { font-size: 0.82rem !important; letter-spacing: 0.15em; }
+  .instructor-body { font-size: 0.88rem !important; line-height: 1.75 !important; color: rgba(250,247,242,0.6) !important; }
+
+  /* TESTIMONIAL */
+  .testimonial-text { font-size: 1rem !important; line-height: 1.85 !important; color: rgba(250,247,242,0.72) !important; }
+  .testimonial-name { font-size: 0.85rem !important; color: rgba(250,247,242,0.85) !important; }
+
+  /* CONTACT INFO */
+  .contact-info-text { font-size: 0.92rem !important; color: rgba(250,247,242,0.65) !important; }
+
+  /* FOOTER LINKS */
+  .footer-link { font-size: 0.85rem !important; color: rgba(250,247,242,0.5) !important; }
+
+  /* ADMISSION STEPS */
+  .step-body { font-size: 0.88rem !important; color: rgba(250,247,242,0.6) !important; line-height: 1.7 !important; }
+
+  /* CARD CTA */
+  .card-cta { font-size: 0.8rem !important; letter-spacing: 0.2em; }
+
+  /* GLASS CARD LABEL */
+  .glass-card p { font-size: 0.88rem !important; line-height: 1.7 !important; }
+
+  /* MISSION VISION */
+  .mission-text { font-size: 0.9rem !important; line-height: 1.75 !important; }
+
+  /* PROFILE MODAL TEXT */
+  .profile-body { font-size: 0.92rem !important; line-height: 1.8 !important; color: rgba(250,247,242,0.65) !important; }
+
+  /* HERO SUBTITLE */
+  .hero-sub { font-size: 0.95rem !important; }
 
   /* CURSOR */
   .custom-cursor { width: 12px; height: 12px; background: var(--gold); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99999; transform: translate(-50%, -50%); transition: transform 0.15s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease; mix-blend-mode: difference; }
@@ -224,6 +271,93 @@ tailwind.config = {
   @media (max-width: 768px) {
     .hero-monogram { font-size: 100px; }
   }
+
+  /* =============================================
+     MASTER READABILITY UPGRADE
+     Overrides all text-xs / font-thin / low-opacity
+     text across the entire site for easy reading
+  ============================================= */
+
+  /* All body/paragraph content */
+  .font-thin { font-weight: 300 !important; }
+  
+  /* Boost all text-xs to readable size */
+  .text-xs { font-size: 0.85rem !important; }
+
+  /* Boost all text-sm to comfortable size */
+  .text-sm { font-size: 1rem !important; }
+
+  /* Lift very low opacity text */
+  .text-ivory\/30 { color: rgba(250,247,242,0.55) !important; }
+  .text-ivory\/40 { color: rgba(250,247,242,0.65) !important; }
+  .text-ivory\/50 { color: rgba(250,247,242,0.72) !important; }
+  .text-ivory\/60 { color: rgba(250,247,242,0.78) !important; }
+  .text-gold\/40  { color: rgba(201,168,76,0.7)  !important; }
+  .text-gold\/50  { color: rgba(201,168,76,0.8)  !important; }
+  .text-gold\/60  { color: rgba(201,168,76,0.9)  !important; }
+
+  /* Section label specifically */
+  .section-label { font-size: 0.78rem !important; font-weight: 300 !important; letter-spacing: 0.3em; color: rgba(201,168,76,0.9) !important; }
+
+  /* Course card content */
+  .course-card p,
+  .course-card span,
+  .course-card div { line-height: 1.75; }
+
+  /* Glass card content */
+  .glass-card p { font-size: 0.92rem !important; line-height: 1.75 !important; color: rgba(250,247,242,0.72) !important; }
+
+  /* Instructor cards */
+  .glass-card .text-xs { font-size: 0.88rem !important; }
+
+  /* Testimonial text */
+  .testimonial-card p { font-size: 1rem !important; line-height: 1.85 !important; color: rgba(250,247,242,0.75) !important; }
+  .testimonial-card .text-xs { font-size: 0.88rem !important; }
+
+  /* Contact section */
+  #contact .text-xs { font-size: 0.9rem !important; }
+  #contact .text-sm { font-size: 1rem !important; }
+
+  /* Footer text */
+  footer .text-xs { font-size: 0.82rem !important; }
+  footer .text-ivory\/40 { color: rgba(250,247,242,0.6) !important; }
+
+  /* Modal text */
+  .modal-box .text-xs { font-size: 0.88rem !important; }
+  .modal-box p { font-size: 0.92rem !important; }
+
+  /* Profile overlay */
+  #profileContent .text-xs { font-size: 0.9rem !important; }
+  #profileContent p { font-size: 0.95rem !important; line-height: 1.85 !important; }
+
+  /* Admission steps */
+  .text-center .text-xs { font-size: 0.88rem !important; }
+
+  /* About section body paragraphs */
+  #about p { font-size: 1rem !important; color: rgba(250,247,242,0.75) !important; }
+
+  /* Course section body */
+  #courses .leading-relaxed { font-size: 0.92rem !important; line-height: 1.8 !important; }
+
+  /* Students strip */
+  .section-label[style*="0.5rem"] { font-size: 0.75rem !important; }
+  .section-label[style*="0.55rem"] { font-size: 0.75rem !important; }
+  .section-label[style*="0.6rem"] { font-size: 0.78rem !important; }
+
+  /* Instructor name subtitle */
+  .glass-card .font-sans.text-xs { font-size: 0.88rem !important; }
+
+  /* Course meta items (batch/mode/age) */
+  .course-card .font-sans { font-size: 0.88rem !important; }
+
+  /* Marquee items — subtle but visible */
+  .marquee-track .section-label { font-size: 0.82rem !important; color: rgba(201,168,76,0.55) !important; }
+
+  /* About section right panel labels */
+  .font-display.text-sm { font-size: 1rem !important; }
+
+  /* gallery caption overlays */
+  .gallery-photo-tile .font-display { font-size: 1rem !important; }
 </style>
 </head>
 <body>
@@ -254,15 +388,15 @@ tailwind.config = {
       </div>
     </a>
     <div class="hidden lg:flex items-center gap-8">
-      <a href="#about" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors duration-300 uppercase">About</a>
-      <a href="#courses" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors duration-300 uppercase">Programs</a>
-      <a href="#instructors" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors duration-300 uppercase">Faculty</a>
-      <a href="#gallery" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors duration-300 uppercase">Gallery</a>
-      <a href="#testimonials" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors duration-300 uppercase">Stories</a>
-      <a href="#contact" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors duration-300 uppercase">Contact</a>
+      <a href="#about" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">About</a>
+      <a href="#courses" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Programs</a>
+      <a href="#instructors" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Faculty</a>
+      <a href="#gallery" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Gallery</a>
+      <a href="#testimonials" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Stories</a>
+      <a href="#contact" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Contact</a>
     </div>
     <div class="flex items-center gap-4">
-      <button onclick="openEnrollModal()" class="hidden lg:block btn-gold px-6 py-2.5 text-xs rounded-none">Enroll Now</button>
+      <button onclick="openEnrollModal()" class="hidden lg:block btn-gold px-6 py-2.5 text-sm rounded-none">Enroll Now</button>
       <button id="menuBtn" onclick="toggleMenu()" class="lg:hidden text-ivory/60 hover:text-gold transition-colors">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
@@ -271,13 +405,13 @@ tailwind.config = {
   <!-- MOBILE MENU -->
   <div id="mobileMenu" class="lg:hidden border-t border-gold/10">
     <div class="px-6 py-4 flex flex-col gap-4" style="background: rgba(10,10,10,0.97);">
-      <a href="#about" onclick="closeMenu()" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">About</a>
-      <a href="#courses" onclick="closeMenu()" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Programs</a>
-      <a href="#instructors" onclick="closeMenu()" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Faculty</a>
-      <a href="#gallery" onclick="closeMenu()" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Gallery</a>
-      <a href="#testimonials" onclick="closeMenu()" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Stories</a>
-      <a href="#contact" onclick="closeMenu()" class="font-sans font-thin text-xs tracking-widest text-ivory/60 hover:text-gold transition-colors py-2 uppercase">Contact</a>
-      <button onclick="openEnrollModal(); closeMenu()" class="btn-gold px-6 py-3 text-xs mt-2 rounded-none">Enroll Now</button>
+      <a href="#about" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">About</a>
+      <a href="#courses" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Programs</a>
+      <a href="#instructors" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Faculty</a>
+      <a href="#gallery" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Gallery</a>
+      <a href="#testimonials" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Stories</a>
+      <a href="#contact" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 uppercase">Contact</a>
+      <button onclick="openEnrollModal(); closeMenu()" class="btn-gold px-6 py-3 text-sm mt-2 rounded-none">Enroll Now</button>
     </div>
   </div>
 </nav>
@@ -311,13 +445,13 @@ tailwind.config = {
       Meets <em class="gold-grad not-italic">Ambition</em>
     </h1>
 
-    <p class="fade-up fade-up-delay-3 font-sans font-thin text-ivory/50 text-sm tracking-[0.2em] max-w-2xl mx-auto mb-12 uppercase">
+    <p class="fade-up fade-up-delay-3 font-sans font-light text-ivory/70 text-base tracking-[0.12em] max-w-2xl mx-auto mb-12 uppercase">
       Elon Modeling Academy — Transforming aspirants into icons. Ramp walk, Runway, Catwalk & Miss India preparation. DLW, Mauadih, Varanasi.
     </p>
 
     <div class="fade-up fade-up-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <button onclick="openEnrollModal()" class="btn-gold px-10 py-4 text-xs rounded-none">Begin Your Journey</button>
-      <a href="#courses" class="btn-outline-gold px-10 py-4 text-xs rounded-none">Explore Programs</a>
+      <button onclick="openEnrollModal()" class="btn-gold px-10 py-4 text-sm rounded-none">Begin Your Journey</button>
+      <a href="#courses" class="btn-outline-gold px-10 py-4 text-sm rounded-none">Explore Programs</a>
     </div>
   </div>
 
@@ -388,13 +522,13 @@ tailwind.config = {
           From the Heart of<br/><em class="gold-grad not-italic">Sasaram</em> to the<br/>Sacred <em class="gold-grad not-italic">Ghats</em>
         </h2>
         <div class="gold-line mb-8 fade-up fade-up-delay-2"></div>
-        <p class="font-sans font-thin text-ivory/60 leading-relaxed mb-6 fade-up fade-up-delay-2" style="letter-spacing: 0.05em; line-height: 2;">
+      <p class="font-sans font-light text-ivory/60 leading-relaxed mb-6 fade-up fade-up-delay-2" style="letter-spacing: 0.05em; line-height: 2;">
           Our journey began modestly in Sasaram — with a handful of passionate students, a dream, and an unwavering belief in the transformative power of modeling and dance. What started as a small studio quickly blossomed into a movement.
         </p>
-        <p class="font-sans font-thin text-ivory/60 leading-relaxed mb-6 fade-up fade-up-delay-3" style="letter-spacing: 0.05em; line-height: 2;">
+        <p class="font-sans font-light text-ivory/60 leading-relaxed mb-6 fade-up fade-up-delay-3" style="letter-spacing: 0.05em; line-height: 2;">
           Over the years, we organised multiple events, dance competitions, and modeling showcases across Bihar, building a formidable local presence and an unmatched reputation for grooming extraordinary talent.
         </p>
-        <p class="font-sans font-thin text-ivory/60 leading-relaxed mb-10 fade-up fade-up-delay-3" style="letter-spacing: 0.05em; line-height: 2;">
+        <p class="font-sans font-light text-ivory/60 leading-relaxed mb-10 fade-up fade-up-delay-3" style="letter-spacing: 0.05em; line-height: 2;">
           Today, we arrive at the eternal ghats of Varanasi — a city of culture, energy, and aspiration — to open the doors of <strong class="text-gold font-normal">Elon Modeling Academy</strong>. Our mission: to help modeling aspirants shine here, and then, to carry their light to the national stage.
         </p>
 
@@ -411,44 +545,41 @@ tailwind.config = {
         </div>
       </div>
 
-      <!-- Right: Visual -->
+      <!-- Right: Student Photo Collage -->
       <div class="relative fade-up fade-up-delay-2">
+        <!-- Main large portrait -->
         <div class="relative" style="aspect-ratio: 3/4;">
-          <!-- Decorative frame -->
-          <div class="absolute -top-4 -left-4 w-full h-full border border-gold/20"></div>
-          <div class="absolute -bottom-4 -right-4 w-full h-full border border-gold/10"></div>
-          <div class="w-full h-full flex items-center justify-center" style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(26,26,26,0.9)); border: 1px solid rgba(201,168,76,0.2);">
-            <div class="text-center p-12">
-              <div class="font-display text-9xl font-thin gold-grad mb-4">A</div>
-              <div class="gold-line w-24 mx-auto mb-4"></div>
-              <div class="section-label text-gold/50">Arya Verma</div>
-              <div class="font-sans font-thin text-ivory/30 text-xs tracking-widest mt-1">PRESENTING</div>
-              <div class="mt-6 space-y-2">
-                <div class="flex items-center justify-center gap-2">
-                  <div class="w-1 h-1 rounded-full bg-gold/40"></div>
-                  <span class="font-sans font-thin text-ivory/40 text-xs tracking-wider">5 Years Experience</span>
-                </div>
-                <div class="flex items-center justify-center gap-2">
-                  <div class="w-1 h-1 rounded-full bg-gold/40"></div>
-                  <span class="font-sans font-thin text-ivory/40 text-xs tracking-wider">Fashion Event Organiser</span>
-                </div>
-                <div class="flex items-center justify-center gap-2">
-                  <div class="w-1 h-1 rounded-full bg-gold/40"></div>
-                  <span class="font-sans font-thin text-ivory/40 text-xs tracking-wider">Model Trainer & Director</span>
-                </div>
-              </div>
+          <div class="absolute -top-4 -left-4 w-full h-full border border-gold/20 pointer-events-none"></div>
+          <div class="absolute -bottom-4 -right-4 w-full h-full border border-gold/10 pointer-events-none"></div>
+          <div class="w-full h-full overflow-hidden" style="border: 1px solid rgba(201,168,76,0.25);">
+            <img src="first_student_giving_pose.png"
+                 alt="Elon Modeling Academy student in a modeling pose"
+                 class="w-full h-full object-cover"
+                 style="filter: contrast(1.05) saturate(0.9); transition: transform 0.8s ease;"
+                 onmouseover="this.style.transform='scale(1.04)'"
+                 onmouseout="this.style.transform='scale(1)'"/>
+            <!-- Gold gradient overlay at bottom -->
+            <div class="absolute bottom-0 left-0 right-0 h-1/3" style="background: linear-gradient(0deg, rgba(10,10,10,0.7) 0%, transparent 100%);"></div>
+            <div class="absolute bottom-6 left-6">
+              <div class="section-label mb-1" style="font-size:0.55rem; color:rgba(201,168,76,0.8);">Elon Student</div>
+              <div class="font-display text-ivory text-sm font-light tracking-widest">Training Session · Varanasi</div>
             </div>
           </div>
         </div>
 
+        <!-- Floating second student thumbnail -->
+        <div class="absolute -bottom-8 -right-8 w-36 h-44 overflow-hidden fade-up fade-up-delay-3" style="border: 2px solid rgba(201,168,76,0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+          <img src="second_student_giving_pose.png"
+               alt="Second student modeling pose"
+               class="w-full h-full object-cover"
+               style="filter: contrast(1.05) saturate(0.9);"/>
+          <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 60%, rgba(10,10,10,0.6) 100%);"></div>
+        </div>
+
         <!-- Achievement Tags -->
-        <div class="absolute -top-6 -right-6 glass-card p-3 fade-up">
+        <div class="absolute -top-6 -right-6 glass-card p-3 fade-up" style="z-index:2;">
           <div class="section-label" style="font-size:0.55rem;">Varanasi's Premier</div>
           <div class="font-display text-gold text-lg font-light">Modeling Academy</div>
-        </div>
-        <div class="absolute -bottom-6 -left-6 glass-card p-3 fade-up">
-          <div class="section-label" style="font-size:0.55rem;">Hybrid Training</div>
-          <div class="font-display text-gold text-lg font-light">Online + Offline</div>
         </div>
       </div>
     </div>
@@ -525,7 +656,7 @@ tailwind.config = {
     <div class="text-center mb-16">
       <div class="section-label mb-4 fade-up">Academy Programs</div>
       <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size: clamp(2.5rem, 5vw, 4rem);">Craft Your <em class="gold-grad not-italic">Legacy</em></h2>
-      <p class="font-sans font-thin text-ivory/40 text-sm mt-4 tracking-wider fade-up fade-up-delay-2 max-w-xl mx-auto">
+      <p class="font-sans font-light text-ivory/55 text-base mt-4 tracking-wider fade-up fade-up-delay-2 max-w-xl mx-auto">
         From foundational training to elite pageant preparation — every program is designed to unlock your highest potential.
       </p>
       <div class="gold-line w-48 mx-auto mt-6 fade-up fade-up-delay-3"></div>
@@ -692,8 +823,8 @@ tailwind.config = {
     <div class="grid grid-cols-2 md:grid-cols-12 gap-3 fade-up" style="grid-auto-rows: 280px;">
 
       <!-- Col 1–5: Student 1 pose 1 — tall spanning 2 rows -->
-      <div class="col-span-2 md:col-span-5 md:row-span-2 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('first_student_giving_pose.jpeg','Modeling Pose · Training Session')">
-        <img src="first_student_giving_pose.jpeg" alt="Elon Academy Student Modeling Pose" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85);"/>
+      <div class="col-span-2 md:col-span-5 md:row-span-2 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('first_student_giving_pose.png','Modeling Pose · Training Session')">
+        <img src="first_student_giving_pose.png" alt="Elon Academy Student Modeling Pose" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85);"/>
         <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: linear-gradient(180deg, transparent 40%, rgba(10,10,10,0.85) 100%);"></div>
         <div class="absolute bottom-0 left-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
           <div class="section-label mb-1" style="font-size:0.55rem; color:rgba(201,168,76,0.9);">Elon Modeling Academy</div>
@@ -707,8 +838,8 @@ tailwind.config = {
       </div>
 
       <!-- Col 6–9: Student 2 pose 1 — top half -->
-      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('second_student_giving_pose.jpeg','Ramp Walk · Academy Floor')">
-        <img src="second_student_giving_pose.jpeg" alt="Elon Academy Second Student Pose" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85); object-position: top;"/>
+      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('second_student_giving_pose.png','Ramp Walk · Academy Floor')">
+        <img src="second_student_giving_pose.png" alt="Elon Academy Second Student Pose" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85); object-position: top;"/>
         <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: rgba(10,10,10,0.4);"></div>
         <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
           <div class="font-display text-ivory text-sm font-light">Ramp Walk · Academy Floor</div>
@@ -725,8 +856,8 @@ tailwind.config = {
       </div>
 
       <!-- Col 6–8: Student 1 pose 2 — bottom half of left grid -->
-      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('first_student_giving_pose2.jpeg','Catwalk Practice · Varanasi')">
-        <img src="first_student_giving_pose2.jpeg" alt="Student Catwalk Practice" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85); object-position: center;"/>
+      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('first_student_giving_pose2.png','Catwalk Practice · Varanasi')">
+        <img src="first_student_giving_pose2.png" alt="Student Catwalk Practice" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85); object-position: center;"/>
         <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: rgba(10,10,10,0.4);"></div>
         <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
           <div class="font-display text-ivory text-sm font-light">Catwalk Practice · Varanasi</div>
@@ -734,8 +865,8 @@ tailwind.config = {
       </div>
 
       <!-- Col 9–12: Student 2 pose 2 — wider bottom right -->
-      <div class="col-span-2 md:col-span-3 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('second_student_giving_pose2.jpeg','Pose Training · Elon Academy')">
-        <img src="second_student_giving_pose2.jpeg" alt="Student Pose Training" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85);"/>
+      <div class="col-span-2 md:col-span-3 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(201,168,76,0.15); transition: border-color 0.4s;" onclick="openLightbox('second_student_giving_pose2.png','Pose Training · Elon Academy')">
+        <img src="second_student_giving_pose2.png" alt="Student Pose Training" class="w-full h-full object-cover" style="transition: transform 0.7s ease; filter: contrast(1.05) saturate(0.85);"/>
         <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background: linear-gradient(180deg, transparent 50%, rgba(10,10,10,0.8) 100%);"></div>
         <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
           <div class="font-display text-ivory text-sm font-light">Pose Training · Elon Academy</div>
@@ -766,16 +897,16 @@ tailwind.config = {
     <!-- Four images in a horizontal strip with parallax feel -->
     <div class="absolute inset-0 grid grid-cols-4 gap-0">
       <div class="relative overflow-hidden">
-        <img src="first_student_giving_pose.jpeg" alt="Student Training" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+        <img src="first_student_giving_pose.png" alt="Student Training" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
       </div>
       <div class="relative overflow-hidden">
-        <img src="second_student_giving_pose.jpeg" alt="Student Pose" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+        <img src="second_student_giving_pose.png" alt="Student Pose" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
       </div>
       <div class="relative overflow-hidden">
-        <img src="first_student_giving_pose2.jpeg" alt="Catwalk" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+        <img src="first_student_giving_pose2.png" alt="Catwalk" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
       </div>
       <div class="relative overflow-hidden">
-        <img src="second_student_giving_pose2.jpeg" alt="Ramp Walk" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
+        <img src="second_student_giving_pose2.png" alt="Ramp Walk" class="w-full h-full object-cover" style="filter: contrast(1.05) saturate(0.75) brightness(0.6); transform: scale(1.08);"/>
       </div>
     </div>
     <!-- Overlay gradient + text -->
@@ -801,8 +932,8 @@ tailwind.config = {
 
     <div class="grid md:grid-cols-3 gap-8">
       <div class="testimonial-card pl-6 py-2 fade-up">
-        <div class="font-display text-5xl font-light text-gold/20 mb-4 leading-none">"</div>
-        <p class="font-sans font-thin text-ivory/60 text-sm leading-relaxed mb-6" style="letter-spacing:0.05em;">
+        <div class="font-display text-5xl font-light text-gold/25 mb-4 leading-none">"</div>
+        <p class="font-sans font-light text-ivory/70 text-base leading-relaxed mb-6" style="letter-spacing:0.04em;">
           Joining Elon Modeling Academy was the best decision of my life. From zero confidence on stage to winning a regional beauty contest — the transformation was remarkable. Arya sir's guidance is truly exceptional.
         </p>
         <div class="flex items-center gap-4">
@@ -810,15 +941,15 @@ tailwind.config = {
             <span class="font-display text-gold text-lg font-light">P</span>
           </div>
           <div>
-            <div class="font-sans text-xs text-ivory/80 tracking-wider">Priya Sharma</div>
-            <div class="section-label mt-0.5" style="font-size:0.55rem;">Bihar, Regional Winner</div>
+            <div class="font-sans text-sm text-ivory/85 tracking-wider">Priya Sharma</div>
+            <div class="section-label mt-0.5">Bihar, Regional Winner</div>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card pl-6 py-2 fade-up fade-up-delay-1">
-        <div class="font-display text-5xl font-light text-gold/20 mb-4 leading-none">"</div>
-        <p class="font-sans font-thin text-ivory/60 text-sm leading-relaxed mb-6" style="letter-spacing:0.05em;">
+        <div class="font-display text-5xl font-light text-gold/25 mb-4 leading-none">"</div>
+        <p class="font-sans font-light text-ivory/70 text-base leading-relaxed mb-6" style="letter-spacing:0.04em;">
           I always wanted to pursue modeling but had no direction. Shivani ma'am and Rajveer sir built my skills from scratch. The ramp walk and horse walk training is absolutely world-class.
         </p>
         <div class="flex items-center gap-4">
@@ -826,15 +957,15 @@ tailwind.config = {
             <span class="font-display text-gold text-lg font-light">A</span>
           </div>
           <div>
-            <div class="font-sans text-xs text-ivory/80 tracking-wider">Aman Singh</div>
-            <div class="section-label mt-0.5" style="font-size:0.55rem;">Sasaram, Model</div>
+            <div class="font-sans text-sm text-ivory/85 tracking-wider">Aman Singh</div>
+            <div class="section-label mt-0.5">Sasaram, Model</div>
           </div>
         </div>
       </div>
 
       <div class="testimonial-card pl-6 py-2 fade-up fade-up-delay-2">
-        <div class="font-display text-5xl font-light text-gold/20 mb-4 leading-none">"</div>
-        <p class="font-sans font-thin text-ivory/60 text-sm leading-relaxed mb-6" style="letter-spacing:0.05em;">
+        <div class="font-display text-5xl font-light text-gold/25 mb-4 leading-none">"</div>
+        <p class="font-sans font-light text-ivory/70 text-base leading-relaxed mb-6" style="letter-spacing:0.04em;">
           At just 7 years old, my daughter started training here. The faculty is incredibly patient, nurturing, and professional. She performed at the state-level event with outstanding confidence.
         </p>
         <div class="flex items-center gap-4">
@@ -842,8 +973,8 @@ tailwind.config = {
             <span class="font-display text-gold text-lg font-light">R</span>
           </div>
           <div>
-            <div class="font-sans text-xs text-ivory/80 tracking-wider">Rekha Gupta</div>
-            <div class="section-label mt-0.5" style="font-size:0.55rem;">Parent, Varanasi</div>
+            <div class="font-sans text-sm text-ivory/85 tracking-wider">Rekha Gupta</div>
+            <div class="section-label mt-0.5">Parent, Varanasi</div>
           </div>
         </div>
       </div>
@@ -911,7 +1042,7 @@ tailwind.config = {
       <!-- Contact Form -->
       <div class="glass-card p-8 lg:p-10 fade-up fade-up-delay-2">
         <h3 class="font-display text-2xl font-light text-ivory mb-2">Send an Enquiry</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs tracking-wider mb-8">We respond within 24 hours. Or WhatsApp us directly for faster response.</p>
+        <p class="font-sans font-light text-ivory/55 text-sm tracking-wider mb-8">We respond within 24 hours. Or WhatsApp us directly for faster response.</p>
         
         <form id="contactForm" class="space-y-6" onsubmit="handleContactForm(event)">
           <div>
@@ -970,7 +1101,7 @@ tailwind.config = {
             <div class="font-sans font-thin text-xs tracking-[0.3em]" style="color:rgba(201,168,76,0.6);">MODELING ACADEMY</div>
           </div>
         </div>
-        <p class="font-sans font-thin text-ivory/30 text-xs leading-relaxed mb-6 max-w-xs" style="letter-spacing:0.05em;">
+        <p class="font-sans font-light text-ivory/45 text-sm leading-relaxed mb-6 max-w-xs" style="letter-spacing:0.04em;">
           Varanasi's premier destination for modeling excellence. From Sasaram to Varanasi — training icons for the national stage.
         </p>
         <div class="flex gap-3">
