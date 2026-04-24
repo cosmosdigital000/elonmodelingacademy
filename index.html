@@ -4,282 +4,367 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Elon Modeling Academy — Varanasi | Premier Modeling Institute</title>
-<meta name="description" content="Elon Modeling Academy Varanasi — Premier modeling, ramp walk, runway & fashion training institute by Arya Verma. Miss India, Miss Bihar, Miss Varanasi preparation. DLW, Mauadih."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Josefin+Sans:wght@100;200;300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config={theme:{extend:{colors:{
-  gold:{DEFAULT:'#E8719A',light:'#F5A0C0',dark:'#C04070',pale:'#FDE8F0'},
-  noir:{DEFAULT:'#0A0A0A',soft:'#141414',card:'#1A1A1A',border:'#2A2A2A'},
-  ivory:{DEFAULT:'#FAF7F2',warm:'#F0EAE0'}
-},fontFamily:{
-  display:['"Cormorant Garamond"','serif'],
-  sans:['"Josefin Sans"','sans-serif'],
-  serif:['"Playfair Display"','serif']
-}}}}
-</script>
+<meta name="description" content="Elon Modeling Academy Varanasi — Premier modeling, ramp walk, runway & fashion training institute by Arya Verma."/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet"/>
 <style>
 :root{
-  --gold:#E8719A;--gold-light:#F5A0C0;--gold-pale:#FDE8F0;
-  --noir:#0A0A0A;--noir-soft:#141414;--noir-card:#1A1A1A;--ivory:#FAF7F2;
+  --pk:#FF3D8A;--pk2:#FF79B0;--pk3:#FFB3D0;--pk4:#FFE0EE;
+  --bl:#1A0A3C;--bl2:#2D1065;--bl3:#4A1B8A;
+  --noir:#080612;--card:#160B2E;--ivory:#FFF0F6;--soft:#FFD6EA;
+  --grad:linear-gradient(135deg,#FF3D8A,#FF79B0);
+  --grad-bg:linear-gradient(135deg,#1A0A3C 0%,#2D1065 50%,#4A1B8A 100%);
+  --pb-grad:linear-gradient(135deg,#FF3D8A 0%,#C026D3 40%,#1A0A3C 100%);
 }
-*{scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
 body{background:var(--noir);color:var(--ivory);font-family:'Josefin Sans',sans-serif;overflow-x:hidden;font-size:1rem}
-body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.4}
-
-/* COLOR UTILS */
-.gold-text{color:var(--gold)}
-.gold-grad{background:linear-gradient(135deg,#E8719A 0%,#F5A0C0 40%,#C04070 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.gold-line{background:linear-gradient(90deg,transparent,var(--gold),transparent);height:1px}
-
-/* NAV */
-nav{backdrop-filter:blur(20px);background:rgba(10,10,10,.85);border-bottom:1px solid rgba(232,113,154,.15)}
-
-/* HERO */
-.hero-bg{background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(232,113,154,.07) 0%,transparent 70%),radial-gradient(ellipse 50% 80% at 100% 50%,rgba(232,113,154,.04) 0%,transparent 60%),linear-gradient(180deg,#0A0A0A 0%,#0F0D08 50%,#0A0A0A 100%)}
-.hero-monogram{font-family:'Cormorant Garamond',serif;font-size:clamp(120px,20vw,260px);font-weight:300;line-height:.85;background:linear-gradient(180deg,rgba(232,113,154,.15) 0%,rgba(232,113,154,.03) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;pointer-events:none;user-select:none}
-
-/* MARQUEE */
-.marquee-track{animation:marquee 28s linear infinite;white-space:nowrap}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* CARDS */
-.glass-card{background:rgba(26,26,26,.6);border:1px solid rgba(232,113,154,.15);backdrop-filter:blur(10px);transition:all .4s ease}
-.glass-card:hover{border-color:rgba(232,113,154,.4);background:rgba(232,113,154,.04);transform:translateY(-4px)}
-.course-card{background:linear-gradient(135deg,rgba(232,113,154,.06) 0%,rgba(26,26,26,.8) 100%);border:1px solid rgba(232,113,154,.2);transition:all .5s cubic-bezier(.25,.46,.45,.94)}
-.course-card:hover{background:linear-gradient(135deg,rgba(232,113,154,.12) 0%,rgba(26,26,26,.9) 100%);border-color:rgba(232,113,154,.5);transform:translateY(-6px);box-shadow:0 30px 60px rgba(232,113,154,.08)}
-
-/* BUTTONS */
-.btn-gold{background:linear-gradient(135deg,#E8719A,#F5A0C0,#C04070);color:#0A0A0A;font-family:'Josefin Sans',sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;transition:all .3s ease;position:relative;overflow:hidden}
-.btn-gold::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.15) 50%,transparent 60%);transform:translateX(-100%);transition:transform .5s ease}
-.btn-gold:hover::after{transform:translateX(100%)}
-.btn-gold:hover{box-shadow:0 0 40px rgba(232,113,154,.3);transform:translateY(-2px)}
-.btn-outline-gold{border:1px solid rgba(232,113,154,.6);color:var(--gold);font-family:'Josefin Sans',sans-serif;font-weight:400;letter-spacing:.2em;text-transform:uppercase;transition:all .3s ease}
-.btn-outline-gold:hover{background:rgba(232,113,154,.1);border-color:var(--gold);box-shadow:0 0 30px rgba(232,113,154,.15)}
-
-/* FORM */
-.form-input{background:rgba(255,255,255,.03);border:1px solid rgba(232,113,154,.2);color:var(--ivory);font-family:'Josefin Sans',sans-serif;transition:all .3s ease}
-.form-input:focus{outline:none;border-color:rgba(232,113,154,.6);background:rgba(232,113,154,.04);box-shadow:0 0 20px rgba(232,113,154,.06)}
-.form-input::placeholder{color:rgba(250,247,242,.3);letter-spacing:.1em;font-size:.9rem}
-.form-label{color:rgba(232,113,154,.8);font-size:.65rem;letter-spacing:.25em;text-transform:uppercase}
-
-/* FADE */
-.fade-up{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-.fade-up.visible{opacity:1;transform:translateY(0)}
-.fade-up-delay-1{transition-delay:.1s}.fade-up-delay-2{transition-delay:.2s}.fade-up-delay-3{transition-delay:.3s}.fade-up-delay-4{transition-delay:.4s}
+body::before{content:'';position:fixed;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
 
 /* TYPOGRAPHY */
-.section-label{font-family:'Josefin Sans',sans-serif;font-weight:300;letter-spacing:.35em;font-size:.78rem;text-transform:uppercase;color:rgba(232,113,154,.9)}
-.section-title{font-family:'Cormorant Garamond',serif;font-weight:300;line-height:1.05}
-p{font-weight:300!important;color:rgba(250,247,242,.75)!important;font-size:.95rem!important;line-height:1.9!important;letter-spacing:.04em!important}
-.form-label{font-size:.78rem!important;letter-spacing:.2em;color:rgba(232,113,154,.95)!important}
-.form-input{font-size:.95rem!important}
-.text-xs{font-size:.85rem!important}
-.text-sm{font-size:1rem!important}
+.disp{font-family:'Cormorant Garamond',serif;font-weight:300}
+.lbl{font-family:'Josefin Sans',sans-serif;font-weight:300;letter-spacing:.35em;font-size:.72rem;text-transform:uppercase;color:var(--pk2)}
+.pk-grad{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gold-line{height:1px;background:linear-gradient(90deg,transparent,var(--pk),transparent);border:none}
 
-/* OPACITY BOOSTS */
-.text-ivory\/30{color:rgba(250,247,242,.55)!important}.text-ivory\/40{color:rgba(250,247,242,.65)!important}
-.text-ivory\/50{color:rgba(250,247,242,.72)!important}.text-ivory\/60{color:rgba(250,247,242,.78)!important}
-.text-gold\/40{color:rgba(232,113,154,.7)!important}.text-gold\/50{color:rgba(232,113,154,.8)!important}.text-gold\/60{color:rgba(232,113,154,.9)!important}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(20px);background:rgba(8,6,18,.85);border-bottom:1px solid rgba(255,61,138,.2)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.logo-box{display:flex;align-items:center;gap:.75rem}
+.logo-sq{width:40px;height:40px;border:1px solid var(--pk);display:flex;align-items:center;justify-content:center}
+.logo-sq span{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--pk)}
+.logo-txt{font-family:'Cormorant Garamond',serif;letter-spacing:.2em;font-size:.85rem}
+.logo-sub{font-size:.6rem;letter-spacing:.3em;color:rgba(255,121,176,.7);font-weight:200}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,240,246,.6);text-decoration:none;transition:color .3s}
+.nav-links a:hover{color:var(--pk)}
+.btn-pk{background:var(--grad);color:#fff;font-family:'Josefin Sans',sans-serif;font-weight:600;letter-spacing:.18em;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s;padding:.65rem 1.5rem;font-size:.75rem}
+.btn-pk:hover{box-shadow:0 0 30px rgba(255,61,138,.4);transform:translateY(-2px)}
+.btn-out{background:none;border:1px solid rgba(255,61,138,.6);color:var(--pk);font-family:'Josefin Sans',sans-serif;font-weight:300;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;padding:.65rem 1.5rem;font-size:.75rem;transition:all .3s}
+.btn-out:hover{background:rgba(255,61,138,.1);box-shadow:0 0 20px rgba(255,61,138,.2)}
+#menuBtn{display:none;background:none;border:none;color:var(--ivory);cursor:pointer}
+#mobileMenu{display:none;background:rgba(8,6,18,.97);border-top:1px solid rgba(255,61,138,.15)}
+#mobileMenu.open{display:block}
+#mobileMenu a{display:block;padding:.75rem 2rem;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,240,246,.6);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.05)}
+#mobileMenu a:hover{color:var(--pk)}
+#mobileMenu .btn-pk{width:calc(100% - 4rem);margin:1rem 2rem;display:block;text-align:center}
 
-/* MISC */
-.stat-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.5rem,5vw,4rem)}
-.testimonial-card{border-left:2px solid rgba(232,113,154,.4)}
-.ornament{display:flex;align-items:center;gap:1rem}
-.ornament::before,.ornament::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(232,113,154,.3),transparent)}
-.qr-box{background:linear-gradient(135deg,rgba(232,113,154,.08),rgba(26,26,26,.9));border:1px solid rgba(232,113,154,.25)}
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;padding-top:80px;
+background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(255,61,138,.12) 0%,transparent 65%),
+radial-gradient(ellipse 60% 80% at 100% 60%,rgba(74,27,138,.2) 0%,transparent 60%),
+linear-gradient(180deg,#080612 0%,#120820 50%,#080612 100%)}
+.hero-mono{font-family:'Cormorant Garamond',serif;font-size:clamp(100px,18vw,240px);font-weight:300;line-height:.85;background:linear-gradient(180deg,rgba(255,61,138,.12),rgba(255,61,138,.02));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none}
+.hero-content{max-width:1280px;margin:0 auto;padding:0 2rem;text-align:center;position:relative;z-index:2}
+.hero-h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(3rem,9vw,7.5rem);line-height:1.0;letter-spacing:-.02em}
+.hero-p{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,240,246,.55);max-width:550px;margin:1.5rem auto 2.5rem;line-height:2;font-weight:200}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.marquee-strip{border-top:1px solid rgba(255,61,138,.15);padding:.8rem 0;overflow:hidden;margin-top:auto}
+.marquee-track{animation:marquee 28s linear infinite;white-space:nowrap;display:inline-flex;gap:2rem}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.scroll-line{position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:.4}
+.scroll-line span{font-size:.55rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ivory)}
+.sl-bar{width:1px;height:48px;overflow:hidden;background:rgba(255,61,138,.2);position:relative}
+.sl-inner{width:1px;height:50%;background:var(--pk);animation:sline 1.5s ease infinite}
+@keyframes sline{0%{transform:translateY(-100%)}100%{transform:translateY(200%)}}
 
-/* MODAL */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10000;display:none;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(10px)}
-.modal-overlay.active{display:flex}
-.modal-box{background:#141414;border:1px solid rgba(232,113,154,.25);max-width:600px;width:100%;max-height:90vh;overflow-y:auto;border-radius:2px}
-.profile-overlay{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:10000;display:none;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(20px)}
-.profile-overlay.active{display:flex}
+/* STATS */
+.stats{background:linear-gradient(90deg,#FF3D8A,#FF6BA8,#FF3D8A);border:none}
+.stats-inner{max-width:1280px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{text-align:center;padding:0 1.5rem;border-right:1px solid rgba(255,255,255,.25)}
+.stat:last-child{border:none}
+.stat-n{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,5vw,3.5rem);color:#fff}
+.stat .lbl{color:rgba(255,255,255,.75)!important}
 
-/* CURSOR */
-.custom-cursor{width:12px;height:12px;background:var(--gold);border-radius:50%;position:fixed;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:transform .15s ease,width .3s ease,height .3s ease;mix-blend-mode:difference}
-.cursor-ring{width:40px;height:40px;border:1px solid rgba(232,113,154,.5);border-radius:50%;position:fixed;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:transform .4s ease,width .3s ease,height .3s ease}
+/* SECTIONS */
+.section{padding:6rem 0}
+.wrap{max-width:1280px;margin:0 auto;padding:0 2rem}
+.sec-head{text-align:center;margin-bottom:4rem}
+.sec-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.1;margin-top:.75rem}
 
-/* SCROLL & WA */
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--noir)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
-.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:1000;animation:pulse-wa 2s infinite}
-@keyframes pulse-wa{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}50%{box-shadow:0 0 0 12px rgba(37,211,102,0)}}
-@keyframes scrollLine{0%{transform:translateY(-100%)}100%{transform:translateY(200%)}}
+/* BG VARIANTS */
+.bg-noir{background:var(--noir)}
+.bg-soft{background:#0D0820}
+.bg-grad{background:var(--grad-bg)}
+.bg-pb{background:linear-gradient(160deg,#1A0A3C 0%,#3D0D6B 40%,#FF3D8A22 100%)}
+.bg-pk-blue{background:linear-gradient(135deg,#FF3D8A15 0%,#1A0A3C 40%,#2D1065 70%,#FF3D8A08 100%)}
+.bg-solid-pink{background:linear-gradient(135deg,#FF3D8A 0%,#FF6BA8 50%,#FF3D8A 100%)}
+.bg-pink-blue{background:linear-gradient(135deg,#FF3D8A 0%,#E8197A 30%,#6B1FA8 70%,#1A0A3C 100%)}
 
-/* MOBILE MENU */
-#mobileMenu{display:none}#mobileMenu.open{display:block}
+/* CARDS */
+.card{background:rgba(255,61,138,.06);border:1px solid rgba(255,61,138,.18);backdrop-filter:blur(8px);transition:all .4s}
+.card:hover{border-color:rgba(255,61,138,.45);background:rgba(255,61,138,.1);transform:translateY(-4px);box-shadow:0 20px 50px rgba(255,61,138,.1)}
+.course-card{background:linear-gradient(135deg,rgba(255,61,138,.07),rgba(22,11,46,.9));border:1px solid rgba(255,61,138,.2);cursor:pointer;transition:all .5s}
+.course-card:hover{background:linear-gradient(135deg,rgba(255,61,138,.15),rgba(22,11,46,1));border-color:rgba(255,61,138,.5);transform:translateY(-6px);box-shadow:0 25px 50px rgba(255,61,138,.12)}
+.icon-sq{width:44px;height:44px;border:1px solid rgba(255,61,138,.35);display:flex;align-items:center;justify-content:center;background:rgba(255,61,138,.07)}
+.tag{border:1px solid rgba(255,61,138,.25);color:rgba(255,121,176,.7);font-size:.7rem;padding:.2rem .75rem;letter-spacing:.15em}
 
-/* GLASS & COURSE CARD TEXT */
-.glass-card p{font-size:.92rem!important;line-height:1.75!important;color:rgba(250,247,242,.72)!important}
-.course-card p,.course-card span,.course-card div{line-height:1.75}
-.testimonial-card p{font-size:1rem!important;line-height:1.85!important;color:rgba(250,247,242,.75)!important}
-#about p{font-size:1rem!important;color:rgba(250,247,242,.75)!important}
-#profileContent p{font-size:.95rem!important;line-height:1.85!important}
-footer .text-xs{font-size:.82rem!important}
-footer .text-ivory\/40{color:rgba(250,247,242,.6)!important}
-.marquee-track .section-label{font-size:.82rem!important;color:rgba(232,113,154,.55)!important}
+/* ABOUT GRID */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.img-frame{position:relative;aspect-ratio:3/4}
+.img-frame-border1{position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:1px solid rgba(255,61,138,.2);pointer-events:none}
+.img-frame-border2{position:absolute;top:12px;left:12px;right:-12px;bottom:-12px;border:1px solid rgba(255,61,138,.1);pointer-events:none}
+.img-main{width:100%;height:100%;object-fit:cover;border:1px solid rgba(255,61,138,.3);filter:contrast(1.05) saturate(.9);transition:transform .8s}
+.img-main:hover{transform:scale(1.03)}
+.img-thumb{position:absolute;bottom:-2rem;right:-2rem;width:130px;height:160px;border:2px solid rgba(255,61,138,.5);overflow:hidden;box-shadow:0 15px 35px rgba(0,0,0,.5)}
+.img-thumb img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05)}
+.badge{position:absolute;top:-1.5rem;right:-1.5rem;background:rgba(22,11,46,.95);border:1px solid rgba(255,61,138,.3);padding:.6rem 1rem;z-index:2;backdrop-filter:blur(8px)}
+.mini-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.mini-card{padding:1.25rem;background:rgba(255,61,138,.05);border:1px solid rgba(255,61,138,.15)}
+.mini-card-t{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--pk2);margin-bottom:.4rem}
+.mini-card p{color:rgba(255,240,246,.5)!important;font-size:.82rem!important}
+
+/* INSTRUCTORS */
+.instr-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.instr-card{padding:2rem;cursor:pointer}
+.instr-av{width:80px;height:80px;border:1px solid rgba(255,61,138,.35);display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(255,61,138,.12),transparent);font-family:'Cormorant Garamond',serif;font-size:2.5rem;flex-shrink:0}
+.instr-body{display:flex;gap:1.5rem;align-items:flex-start}
+
+/* COURSES GRID */
+.courses-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.course-card{padding:2rem}
+.elite-badge{border:1px solid rgba(255,61,138,.5);color:var(--pk);font-size:.65rem;padding:.2rem .6rem;letter-spacing:.15em}
+
+/* ADMISSION STEPS */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.step-line{position:absolute;top:3rem;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,61,138,.25),rgba(255,61,138,.25),transparent)}
+.step{text-align:center;padding:2rem}
+.step-num{width:88px;height:88px;margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,61,138,.35);background:linear-gradient(135deg,rgba(255,61,138,.1),transparent);font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;background-clip:initial}
 
 /* GALLERY */
-.gallery-photo-tile img{transition:transform .7s ease}
-.gallery-photo-tile:hover img{transform:scale(1.06)}
-.gallery-photo-tile:hover{border-color:rgba(232,113,154,.45)!important}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:.75rem;grid-auto-rows:260px}
+.g1{grid-column:span 5;grid-row:span 2}
+.g2{grid-column:span 4}.g3{grid-column:span 3}.g4{grid-column:span 4}.g5{grid-column:span 3}.g-accent{grid-column:span 3;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(255,61,138,.1),rgba(45,16,101,.95));border:1px solid rgba(255,61,138,.2)}
+.g-tile{position:relative;overflow:hidden;cursor:pointer;border:1px solid rgba(255,61,138,.15);transition:border-color .4s}
+.g-tile:hover{border-color:rgba(255,61,138,.45)}
+.g-tile img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(.85);transition:transform .7s}
+.g-tile:hover img{transform:scale(1.06)}
+.g-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(8,6,18,.85) 100%);opacity:0;transition:opacity .4s}
+.g-tile:hover .g-overlay{opacity:1}
+.g-cap{position:absolute;bottom:0;left:0;padding:1rem 1.25rem;transform:translateY(8px);opacity:0;transition:all .4s}
+.g-tile:hover .g-cap{transform:translateY(0);opacity:1}
+.view-tag{position:absolute;top:1rem;left:1rem;background:rgba(8,6,18,.7);border:1px solid rgba(255,61,138,.4);padding:.2rem .7rem;font-size:.65rem;letter-spacing:.15em;color:var(--pk);opacity:0;transition:opacity .4s;backdrop-filter:blur(4px)}
+.g-tile:hover .view-tag{opacity:1}
 
-@media(max-width:768px){.hero-monogram{font-size:100px}}
+/* STUDENT STRIP */
+.strip{position:relative;height:420px;overflow:hidden}
+.strip-bg{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.strip-bg div{overflow:hidden}
+.strip-bg img{width:100%;height:100%;object-fit:cover;filter:saturate(.6) brightness(.5);transform:scale(1.08)}
+.strip-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,6,18,.75) 0%,rgba(45,16,101,.5) 50%,rgba(8,6,18,.75) 100%)}
+.strip-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 2rem}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.testi{border-left:2px solid rgba(255,61,138,.4);padding-left:1.5rem}
+.quote-mark{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:rgba(255,61,138,.2);line-height:.8;margin-bottom:1rem}
+.testi-av{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,61,138,.35);display:flex;align-items:center;justify-content:center;background:rgba(255,61,138,.08);font-family:'Cormorant Garamond',serif;font-size:1.1rem}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.contact-item{display:flex;gap:1rem;align-items:flex-start;margin-bottom:2rem}
+.contact-icon{width:40px;height:40px;border:1px solid rgba(255,61,138,.3);display:flex;align-items:center;justify-content:center;background:rgba(255,61,138,.06);flex-shrink:0;margin-top:.2rem}
+.form-lbl{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,121,176,.9);display:block;margin-bottom:.5rem}
+.form-input{background:rgba(255,255,255,.03);border:1px solid rgba(255,61,138,.2);color:var(--ivory);font-family:'Josefin Sans',sans-serif;font-size:.9rem;padding:.75rem 1rem;width:100%;transition:all .3s;outline:none}
+.form-input:focus{border-color:rgba(255,61,138,.6);background:rgba(255,61,138,.04)}
+.form-input::placeholder{color:rgba(255,240,246,.25);letter-spacing:.08em;font-size:.85rem}
+select.form-input{background:#160B2E}
+.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+/* FOOTER */
+footer{background:var(--noir);border-top:1px solid rgba(255,61,138,.15)}
+.footer-inner{max-width:1280px;margin:0 auto;padding:4rem 2rem 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.foot-links{list-style:none}
+.foot-links li{margin-bottom:.6rem}
+.foot-links a{font-size:.75rem;letter-spacing:.15em;color:rgba(255,240,246,.4);text-decoration:none;transition:color .3s}
+.foot-links a:hover{color:var(--pk)}
+.social-row{display:flex;gap:.6rem;margin-top:1.2rem}
+.social-btn{width:36px;height:36px;border:1px solid rgba(255,61,138,.2);display:flex;align-items:center;justify-content:center;transition:border-color .3s}
+.social-btn:hover{border-color:rgba(255,61,138,.6)}
+
+/* FADE ANIMATION */
+.fade{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade.vis{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* MODAL */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:10000;display:none;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(12px)}
+.modal.open{display:flex}
+.modal-box{background:#0F0820;border:1px solid rgba(255,61,138,.25);max-width:580px;width:100%;max-height:90vh;overflow-y:auto}
+.modal-head{display:flex;align-items:center;justify-content:space-between;padding:1.5rem;border-bottom:1px solid rgba(255,61,138,.15)}
+.modal-body{padding:1.5rem}
+.close-btn{background:none;border:none;cursor:pointer;color:rgba(255,240,246,.4);transition:color .3s}
+.close-btn:hover{color:var(--pk)}
+
+/* PROFILE */
+.prof-modal{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:10000;display:none;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(18px)}
+.prof-modal.open{display:flex}
+.prof-box{background:#0F0820;border:1px solid rgba(255,61,138,.25);max-width:600px;width:100%;max-height:90vh;overflow-y:auto}
+
+/* LIGHTBOX */
+#lightbox{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.95);backdrop-filter:blur(18px)}
+#lightbox.open{display:flex}
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:1000;animation:wapulse 2s infinite}
+@keyframes wapulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}50%{box-shadow:0 0 0 12px transparent}}
+.wa-btn{width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center}
+
+/* CURSOR */
+.cur{width:10px;height:10px;background:var(--pk);border-radius:50%;position:fixed;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);mix-blend-mode:difference}
+.cur-ring{width:36px;height:36px;border:1px solid rgba(255,61,138,.5);border-radius:50%;position:fixed;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:all .4s ease}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--noir)}::-webkit-scrollbar-thumb{background:var(--pk);border-radius:2px}
+
+/* PINK SECTION TEXT OVERRIDES */
+.bg-solid-pink .lbl{color:rgba(255,255,255,.7)!important}
+.bg-solid-pink .sec-h2{color:#fff}
+.bg-solid-pink .gold-line{background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent)}
+.bg-solid-pink .card{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3)}
+.bg-solid-pink .card:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.5)}
+.bg-solid-pink h3{color:#fff}
+.bg-solid-pink p{color:rgba(255,255,255,.82)!important}
+.bg-solid-pink .tag{border-color:rgba(255,255,255,.35);color:rgba(255,255,255,.85)}
+.bg-solid-pink .instr-av{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.15)}
+.bg-solid-pink .pk-grad{background:none;-webkit-text-fill-color:#fff;color:#fff}
+.bg-pink-blue .pk-grad{background:linear-gradient(135deg,#fff,#FFD6EA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.bg-solid-pink span[style*="color:rgba(255,240"]{color:rgba(255,255,255,.75)!important}
+.bg-solid-pink span[style*="text-transform:uppercase"]{color:rgba(255,255,255,.55)!important}
+/* PINK-BLUE SECTION TEXT */
+.bg-pink-blue .testi{border-left-color:rgba(255,255,255,.4)}
+.bg-pink-blue .quote-mark{color:rgba(255,255,255,.25)}
+.bg-pink-blue p{color:rgba(255,255,255,.82)!important}
+.bg-pink-blue .lbl{color:rgba(255,255,255,.65)!important}
+.bg-pink-blue .sec-h2{color:#fff}
+.bg-pink-blue .gold-line{background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent)}
+.bg-pink-blue .testi-av{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.35)}
+.bg-pink-blue div[style*="color:var(--ivory)"]{color:#fff!important}
+.bg-pink-blue div[style*="letter-spacing:.1em"]{color:#fff!important}
+
+/* TEXT HELPERS */
+p{font-weight:300;color:rgba(255,240,246,.65);font-size:.9rem;line-height:1.9;letter-spacing:.04em}
+a{text-decoration:none}
+h3{font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--ivory)}
+
+@media(max-width:900px){
+  .about-grid,.contact-grid,.instr-grid{grid-template-columns:1fr}
+  .courses-grid{grid-template-columns:1fr 1fr}
+  .stats-inner,.steps-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .nav-links,nav .btn-pk{display:none}
+  #menuBtn{display:block}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .g1,.g2,.g3,.g4,.g5,.g-accent{grid-column:span 1;grid-row:span 1}
+}
+@media(max-width:600px){.courses-grid{grid-template-columns:1fr}.stats-inner{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<div class="custom-cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
 
-<!-- WHATSAPP FLOAT -->
+<!-- WA FLOAT -->
 <a href="https://wa.me/916202377003" target="_blank" class="wa-float">
-  <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background:#25D366">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </div>
+  <div class="wa-btn"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
 </a>
 
 <!-- NAV -->
-<nav class="fixed top-0 left-0 right-0 z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="#" class="flex items-center gap-3">
-      <div class="w-10 h-10 border border-gold flex items-center justify-center"><span class="gold-text font-display font-light text-xl">E</span></div>
-      <div>
-        <div class="font-display font-light text-ivory text-sm tracking-widest">ELON</div>
-        <div class="font-sans font-thin text-xs tracking-[0.3em]" style="color:rgba(232,113,154,.7)">MODELING ACADEMY</div>
-      </div>
-    </a>
-    <div class="hidden lg:flex items-center gap-8">
-      <a href="#about" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">About</a>
-      <a href="#courses" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Programs</a>
-      <a href="#instructors" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Faculty</a>
-      <a href="#gallery" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Gallery</a>
-      <a href="#testimonials" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Stories</a>
-      <a href="#contact" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors duration-300 uppercase">Contact</a>
+<nav>
+  <div class="nav-inner">
+    <div class="logo-box">
+      <div class="logo-sq"><span>E</span></div>
+      <div><div class="logo-txt" style="color:var(--ivory)">ELON</div><div class="logo-sub">MODELING ACADEMY</div></div>
     </div>
-    <div class="flex items-center gap-4">
-      <button onclick="openEnrollModal()" class="hidden lg:block btn-gold px-6 py-2.5 text-sm rounded-none">Enroll Now</button>
-      <button id="menuBtn" onclick="toggleMenu()" class="lg:hidden text-ivory/60 hover:text-gold transition-colors">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li><li><a href="#courses">Programs</a></li>
+      <li><a href="#instructors">Faculty</a></li><li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Stories</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display:flex;gap:1rem;align-items:center">
+      <button class="btn-pk" onclick="openEnroll()">Enroll Now</button>
+      <button id="menuBtn" onclick="toggleMenu()"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </div>
-  <div id="mobileMenu" class="lg:hidden border-t border-gold/10">
-    <div class="px-6 py-4 flex flex-col gap-4" style="background:rgba(10,10,10,.97)">
-      <a href="#about" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">About</a>
-      <a href="#courses" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Programs</a>
-      <a href="#instructors" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Faculty</a>
-      <a href="#gallery" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Gallery</a>
-      <a href="#testimonials" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 border-b border-white/5 uppercase">Stories</a>
-      <a href="#contact" onclick="closeMenu()" class="font-sans font-light text-sm tracking-widest text-ivory/70 hover:text-gold transition-colors py-2 uppercase">Contact</a>
-      <button onclick="openEnrollModal();closeMenu()" class="btn-gold px-6 py-3 text-sm mt-2 rounded-none">Enroll Now</button>
-    </div>
+  <div id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#courses" onclick="closeMenu()">Programs</a>
+    <a href="#instructors" onclick="closeMenu()">Faculty</a>
+    <a href="#gallery" onclick="closeMenu()">Gallery</a>
+    <a href="#testimonials" onclick="closeMenu()">Stories</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+    <button class="btn-pk" onclick="openEnroll();closeMenu()">Enroll Now</button>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero-bg min-h-screen flex flex-col justify-center relative overflow-hidden pt-20">
-  <div class="absolute inset-0 flex items-center justify-center select-none pointer-events-none"><span class="hero-monogram">EMA</span></div>
-  <div class="absolute left-0 top-0 bottom-0 w-px" style="background:linear-gradient(180deg,transparent 10%,rgba(232,113,154,.15) 50%,transparent 90%);left:clamp(20px,4vw,60px)"></div>
-  <div class="absolute right-0 top-0 bottom-0 w-px" style="background:linear-gradient(180deg,transparent 10%,rgba(232,113,154,.15) 50%,transparent 90%);right:clamp(20px,4vw,60px)"></div>
-
-  <div class="max-w-7xl mx-auto px-8 lg:px-16 relative z-10 text-center">
-    <div class="fade-up"><div class="section-label mb-6">Est. Bihar · Now in Varanasi · Presented by Arya Verma</div></div>
-    <div class="fade-up fade-up-delay-1"><div class="ornament mb-4"><span class="section-label">Premier Modeling Institute</span></div></div>
-    <h1 class="section-title text-ivory mb-2 fade-up fade-up-delay-2" style="font-size:clamp(3.5rem,9vw,8rem);letter-spacing:-.02em">Where <em class="gold-grad not-italic">Elegance</em></h1>
-    <h1 class="section-title text-ivory mb-8 fade-up fade-up-delay-2" style="font-size:clamp(3.5rem,9vw,8rem);letter-spacing:-.02em">Meets <em class="gold-grad not-italic">Ambition</em></h1>
-    <p class="fade-up fade-up-delay-3 font-sans font-light text-ivory/70 text-base tracking-[0.12em] max-w-2xl mx-auto mb-12 uppercase">Elon Modeling Academy — Transforming aspirants into icons. Ramp walk, Runway, Catwalk & Miss India preparation. DLW, Mauadih, Varanasi.</p>
-    <div class="fade-up fade-up-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <button onclick="openEnrollModal()" class="btn-gold px-10 py-4 text-sm rounded-none">Begin Your Journey</button>
-      <a href="#courses" class="btn-outline-gold px-10 py-4 text-sm rounded-none">Explore Programs</a>
+<section class="hero">
+  <div class="hero-mono">EMA</div>
+  <div class="hero-content">
+    <div class="lbl fade" style="margin-bottom:1.5rem">Est. Bihar · Now in Varanasi · Presented by Arya Verma</div>
+    <h1 class="hero-h1 fade d1">Where <em class="pk-grad" style="font-style:normal">Elegance</em><br/>Meets <em class="pk-grad" style="font-style:normal">Ambition</em></h1>
+    <p class="hero-p fade d2">Elon Modeling Academy — Transforming aspirants into icons. Ramp walk, Runway, Catwalk & Miss India preparation. DLW, Mauadih, Varanasi.</p>
+    <div class="hero-btns fade d3">
+      <button class="btn-pk" onclick="openEnroll()" style="padding:.9rem 2.5rem">Begin Your Journey</button>
+      <a href="#courses" class="btn-out" style="padding:.9rem 2.5rem">Explore Programs</a>
     </div>
   </div>
-
-  <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-    <span class="font-sans font-thin text-xs tracking-widest uppercase text-ivory" style="font-size:.6rem">Scroll</span>
-    <div class="w-px h-12 overflow-hidden relative" style="background:rgba(232,113,154,.2)">
-      <div style="width:1px;height:50%;background:var(--gold);animation:scrollLine 1.5s ease infinite"></div>
-    </div>
-  </div>
-
-  <div class="absolute bottom-0 left-0 right-0 py-4 border-t border-gold/10 overflow-hidden">
-    <div class="marquee-track inline-flex gap-12">
-      <span class="section-label text-gold/40">Ramp Walk</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Runway Training</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Miss India Prep</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Catwalk</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Horse Walk</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Grooming</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Miss Bihar</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Miss Varanasi</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Ramp Walk</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Runway Training</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Miss India Prep</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Catwalk</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Horse Walk</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Grooming</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Miss Bihar</span><span class="gold-text opacity-20 text-xs">✦</span>
-      <span class="section-label text-gold/40">Miss Varanasi</span><span class="gold-text opacity-20 text-xs">✦</span>
+  <div class="scroll-line"><span>Scroll</span><div class="sl-bar"><div class="sl-inner"></div></div></div>
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Ramp Walk</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Runway Training</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Miss India Prep</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Catwalk</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Horse Walk</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Grooming</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Miss Bihar</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Miss Varanasi</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Ramp Walk</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Runway Training</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Miss India Prep</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Catwalk</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Horse Walk</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
+      <span class="lbl" style="color:rgba(255,121,176,.45)">Grooming</span><span style="color:rgba(255,61,138,.2);font-size:.7rem">✦</span>
     </div>
   </div>
 </section>
 
-<!-- STATS BAR -->
-<section style="background:linear-gradient(90deg,rgba(232,113,154,.06),rgba(232,113,154,.1),rgba(232,113,154,.06));border-top:1px solid rgba(232,113,154,.15);border-bottom:1px solid rgba(232,113,154,.15)">
-  <div class="max-w-7xl mx-auto px-8 py-10 grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-gold/20">
-    <div class="text-center px-6 fade-up"><div class="stat-num gold-grad">5+</div><div class="section-label mt-1">Years of Excellence</div></div>
-    <div class="text-center px-6 fade-up fade-up-delay-1"><div class="stat-num gold-grad">200+</div><div class="section-label mt-1">Students Trained</div></div>
-    <div class="text-center px-6 fade-up fade-up-delay-2"><div class="stat-num gold-grad">50+</div><div class="section-label mt-1">Events Organised</div></div>
-    <div class="text-center px-6 fade-up fade-up-delay-3"><div class="stat-num gold-grad">3+</div><div class="section-label mt-1">Years Min. Age</div></div>
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat fade"><div class="stat-n">5+</div><div class="lbl" style="margin-top:.3rem">Years of Excellence</div></div>
+    <div class="stat fade d1"><div class="stat-n">200+</div><div class="lbl" style="margin-top:.3rem">Students Trained</div></div>
+    <div class="stat fade d2"><div class="stat-n">50+</div><div class="lbl" style="margin-top:.3rem">Events Organised</div></div>
+    <div class="stat fade d3"><div class="stat-n">3+</div><div class="lbl" style="margin-top:.3rem">Years Min. Age</div></div>
   </div>
-</section>
+</div>
 
 <!-- ABOUT -->
-<section id="about" class="py-32 relative overflow-hidden" style="background:var(--noir-soft)">
-  <div class="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none" style="background:radial-gradient(circle,rgba(232,113,154,.04) 0%,transparent 70%);transform:translate(30%,-30%)"></div>
-  <div class="max-w-7xl mx-auto px-8 lg:px-16">
-    <div class="grid lg:grid-cols-2 gap-20 items-center">
+<section class="section bg-pk-blue" id="about">
+  <div class="wrap">
+    <div class="about-grid">
       <div>
-        <div class="section-label mb-4 fade-up">Our Story</div>
-        <h2 class="section-title text-ivory mb-8 fade-up fade-up-delay-1" style="font-size:clamp(2.5rem,5vw,4rem)">From the Heart of<br/><em class="gold-grad not-italic">Sasaram</em> to the<br/>Sacred <em class="gold-grad not-italic">Ghats</em></h2>
-        <div class="gold-line mb-8 fade-up fade-up-delay-2"></div>
-        <p class="font-sans font-light text-ivory/60 leading-relaxed mb-6 fade-up fade-up-delay-2" style="letter-spacing:.05em;line-height:2">Our journey began modestly in Sasaram — with a handful of passionate students, a dream, and an unwavering belief in the transformative power of modeling and dance. What started as a small studio quickly blossomed into a movement.</p>
-        <p class="font-sans font-light text-ivory/60 leading-relaxed mb-6 fade-up fade-up-delay-3" style="letter-spacing:.05em;line-height:2">Over the years, we organised multiple events, dance competitions, and modeling showcases across Bihar, building a formidable local presence and an unmatched reputation for grooming extraordinary talent.</p>
-        <p class="font-sans font-light text-ivory/60 leading-relaxed mb-10 fade-up fade-up-delay-3" style="letter-spacing:.05em;line-height:2">Today, we arrive at the eternal ghats of Varanasi — a city of culture, energy, and aspiration — to open the doors of <strong class="text-gold font-normal">Elon Modeling Academy</strong>. Our mission: to help modeling aspirants shine here, and then, to carry their light to the national stage.</p>
-        <div class="grid grid-cols-2 gap-4 fade-up fade-up-delay-4">
-          <div class="glass-card p-5">
-            <div class="text-gold text-xs tracking-widest uppercase font-sans mb-2">Our Mission</div>
-            <p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed">To discover, nurture, and launch the next generation of India's finest models.</p>
-          </div>
-          <div class="glass-card p-5">
-            <div class="text-gold text-xs tracking-widest uppercase font-sans mb-2">Our Vision</div>
-            <p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed">To make Varanasi a celebrated hub of India's fashion and modeling industry.</p>
-          </div>
+        <div class="lbl fade">Our Story</div>
+        <h2 class="sec-h2 fade d1">From <em class="pk-grad" style="font-style:normal">Sasaram</em> to the Sacred <em class="pk-grad" style="font-style:normal">Ghats</em></h2>
+        <hr class="gold-line fade d2" style="margin:1.5rem 0 2rem"/>
+        <p class="fade d2" style="margin-bottom:1rem">Our journey began modestly in Sasaram — with passionate students, a dream, and an unwavering belief in the transformative power of modeling and dance.</p>
+        <p class="fade d3" style="margin-bottom:1rem">We organised multiple events, dance competitions, and modeling showcases across Bihar, building an unmatched reputation for grooming extraordinary talent.</p>
+        <p class="fade d3" style="margin-bottom:1.5rem">Today, we arrive at the eternal ghats of Varanasi to open <strong style="color:var(--pk2);font-weight:400">Elon Modeling Academy</strong> — helping aspirants shine locally and on the national stage.</p>
+        <div class="mini-cards fade d4">
+          <div class="mini-card"><div class="mini-card-t">Our Mission</div><p>Discover, nurture, and launch the next generation of India's finest models.</p></div>
+          <div class="mini-card"><div class="mini-card-t">Our Vision</div><p>Make Varanasi a celebrated hub of India's fashion and modeling industry.</p></div>
         </div>
       </div>
-
-      <div class="relative fade-up fade-up-delay-2">
-        <div class="relative" style="aspect-ratio:3/4">
-          <div class="absolute -top-4 -left-4 w-full h-full border border-gold/20 pointer-events-none"></div>
-          <div class="absolute -bottom-4 -right-4 w-full h-full border border-gold/10 pointer-events-none"></div>
-          <div class="w-full h-full overflow-hidden" style="border:1px solid rgba(232,113,154,.25)">
-            <img src="first_student_giving_pose.jpeg" alt="Elon Modeling Academy student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.9);transition:transform .8s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
-            <div class="absolute bottom-0 left-0 right-0 h-1/3" style="background:linear-gradient(0deg,rgba(10,10,10,.7) 0%,transparent 100%)"></div>
-            <div class="absolute bottom-6 left-6">
-              <div class="section-label mb-1" style="font-size:.55rem;color:rgba(232,113,154,.8)">Elon Student</div>
-              <div class="font-display text-ivory text-sm font-light tracking-widest">Training Session · Varanasi</div>
-            </div>
-          </div>
-        </div>
-        <div class="absolute -bottom-8 -right-8 w-36 h-44 overflow-hidden fade-up fade-up-delay-3" style="border:2px solid rgba(232,113,154,.4);box-shadow:0 20px 40px rgba(0,0,0,.5)">
-          <img src="second_student_giving_pose.jpeg" alt="Second student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.9)"/>
-          <div class="absolute inset-0" style="background:linear-gradient(180deg,transparent 60%,rgba(10,10,10,.6) 100%)"></div>
-        </div>
-        <div class="absolute -top-6 -right-6 glass-card p-3 fade-up" style="z-index:2">
-          <div class="section-label" style="font-size:.55rem">Varanasi's Premier</div>
-          <div class="font-display text-gold text-lg font-light">Modeling Academy</div>
+      <div class="img-frame fade d2">
+        <div class="img-frame-border1"></div>
+        <div class="img-frame-border2"></div>
+        <img src="first_student_giving_pose.jpeg" alt="Elon Modeling Academy student" class="img-main"/>
+        <div class="img-thumb"><img src="second_student_giving_pose.jpeg" alt="Student"/></div>
+        <div class="badge">
+          <div class="lbl" style="font-size:.5rem;margin-bottom:.2rem">Varanasi's Premier</div>
+          <div class="disp pk-grad" style="font-size:1.1rem">Modeling Academy</div>
         </div>
       </div>
     </div>
@@ -287,319 +372,234 @@ footer .text-ivory\/40{color:rgba(250,247,242,.6)!important}
 </section>
 
 <!-- INSTRUCTORS -->
-<section id="instructors" class="py-32" style="background:var(--noir)">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16">
-    <div class="text-center mb-16">
-      <div class="section-label mb-4 fade-up">Expert Faculty</div>
-      <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size:clamp(2.5rem,5vw,4rem)">Trained by the <em class="gold-grad not-italic">Best</em></h2>
-      <div class="gold-line w-48 mx-auto mt-6 fade-up fade-up-delay-2"></div>
+<section class="section bg-solid-pink" id="instructors">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lbl fade">Expert Faculty</div>
+      <h2 class="sec-h2 fade d1">Trained by the <em class="pk-grad" style="font-style:normal">Best</em></h2>
+      <hr class="gold-line fade d2" style="max-width:200px;margin:1.2rem auto 0"/>
     </div>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="glass-card p-8 cursor-pointer fade-up" onclick="openProfile('shivani')">
-        <div class="flex items-start gap-6">
-          <div class="w-24 h-24 flex-shrink-0 flex items-center justify-center border border-gold/30" style="background:linear-gradient(135deg,rgba(232,113,154,.1),transparent)">
-            <span class="font-display text-4xl font-light gold-grad">S</span>
-          </div>
-          <div class="flex-1">
-            <div class="section-label mb-1" style="font-size:.6rem">Lead Instructor</div>
-            <h3 class="font-display text-2xl font-light text-ivory mb-1">Shivani Soni</h3>
-            <div class="text-gold text-xs tracking-widest font-sans mb-3">Professional Model</div>
-            <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed">A seasoned professional model with extensive runway and ramp experience. Shivani brings real-world fashion industry expertise to every class, training students in posture, walk, and stage presence.</p>
-            <div class="mt-4 flex gap-3 flex-wrap">
-              <span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1 tracking-wider">Runway</span>
-              <span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1 tracking-wider">Catwalk</span>
-              <span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1 tracking-wider">Grooming</span>
+    <div class="instr-grid">
+      <div class="card instr-card fade" onclick="openProfile('shivani')">
+        <div class="instr-body">
+          <div class="instr-av"><span class="pk-grad">S</span></div>
+          <div>
+            <div class="lbl" style="font-size:.55rem;margin-bottom:.3rem">Lead Instructor</div>
+            <h3 style="font-size:1.6rem;margin-bottom:.25rem">Shivani Soni</h3>
+            <div style="font-size:.7rem;color:var(--pk2);letter-spacing:.15em;margin-bottom:.75rem">Professional Model</div>
+            <p style="font-size:.82rem">A seasoned professional model with extensive runway and ramp experience. Shivani brings real-world expertise to every class, training students in posture, walk, and stage presence.</p>
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem">
+              <span class="tag">Runway</span><span class="tag">Catwalk</span><span class="tag">Grooming</span>
             </div>
           </div>
         </div>
-        <div class="mt-4 text-right"><span class="text-gold/40 font-sans text-xs tracking-widest uppercase">View Profile →</span></div>
+        <div style="text-align:right;margin-top:1rem"><span style="color:rgba(255,121,176,.5);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase">View Profile →</span></div>
       </div>
-
-      <div class="glass-card p-8 cursor-pointer fade-up fade-up-delay-1" onclick="openProfile('rajveer')">
-        <div class="flex items-start gap-6">
-          <div class="w-24 h-24 flex-shrink-0 flex items-center justify-center border border-gold/30" style="background:linear-gradient(135deg,rgba(232,113,154,.1),transparent)">
-            <span class="font-display text-4xl font-light gold-grad">R</span>
-          </div>
-          <div class="flex-1">
-            <div class="section-label mb-1" style="font-size:.6rem">Master Trainer</div>
-            <h3 class="font-display text-2xl font-light text-ivory mb-1">Rajveer</h3>
-            <div class="text-gold text-xs tracking-widest font-sans mb-3">RDF, Sasaram · 15 Years Experience</div>
-            <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed">With 15 remarkable years in the industry, Rajveer is one of the most experienced modeling trainers from Bihar. He brings a legacy of discipline, artistry, and excellence to every batch at Elon Academy.</p>
-            <div class="mt-4 flex gap-3 flex-wrap">
-              <span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1 tracking-wider">Ramp Walk</span>
-              <span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1 tracking-wider">Pageants</span>
-              <span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1 tracking-wider">Choreography</span>
+      <div class="card instr-card fade d1" onclick="openProfile('rajveer')">
+        <div class="instr-body">
+          <div class="instr-av"><span class="pk-grad">R</span></div>
+          <div>
+            <div class="lbl" style="font-size:.55rem;margin-bottom:.3rem">Master Trainer</div>
+            <h3 style="font-size:1.6rem;margin-bottom:.25rem">Rajveer</h3>
+            <div style="font-size:.7rem;color:var(--pk2);letter-spacing:.15em;margin-bottom:.75rem">RDF, Sasaram · 15 Years Experience</div>
+            <p style="font-size:.82rem">With 15 remarkable years, Rajveer is one of the most experienced modeling trainers from Bihar. He brings a legacy of discipline, artistry, and excellence to every batch.</p>
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem">
+              <span class="tag">Ramp Walk</span><span class="tag">Pageants</span><span class="tag">Choreography</span>
             </div>
           </div>
         </div>
-        <div class="mt-4 text-right"><span class="text-gold/40 font-sans text-xs tracking-widest uppercase">View Profile →</span></div>
+        <div style="text-align:right;margin-top:1rem"><span style="color:rgba(255,121,176,.5);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase">View Profile →</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- COURSES -->
-<section id="courses" class="py-32 relative" style="background:var(--noir-soft)">
-  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(232,113,154,.03) 0%,transparent 70%)"></div>
-  <div class="max-w-7xl mx-auto px-8 lg:px-16 relative">
-    <div class="text-center mb-16">
-      <div class="section-label mb-4 fade-up">Academy Programs</div>
-      <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size:clamp(2.5rem,5vw,4rem)">Craft Your <em class="gold-grad not-italic">Legacy</em></h2>
-      <p class="font-sans font-light text-ivory/55 text-base mt-4 tracking-wider fade-up fade-up-delay-2 max-w-xl mx-auto">From foundational training to elite pageant preparation — every program is designed to unlock your highest potential.</p>
-      <div class="gold-line w-48 mx-auto mt-6 fade-up fade-up-delay-3"></div>
+<section class="section bg-soft" id="courses" style="background:linear-gradient(160deg,#0D0820 0%,#1A0A3C 50%,#0D0820 100%)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lbl fade">Academy Programs</div>
+      <h2 class="sec-h2 fade d1">Craft Your <em class="pk-grad" style="font-style:normal">Legacy</em></h2>
+      <p class="fade d2" style="max-width:480px;margin:.8rem auto 0">From foundational training to elite pageant preparation — every program unlocks your highest potential.</p>
+      <hr class="gold-line fade d3" style="max-width:200px;margin:1.2rem auto 0"/>
     </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Course 1 -->
-      <div class="course-card p-8 fade-up" onclick="openEnrollModal()">
-        <div class="w-12 h-12 border border-gold/30 flex items-center justify-center mb-6" style="background:rgba(232,113,154,.06)">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M12 2L2 19h20L12 2z"/></svg>
+    <div class="courses-grid">
+      <div class="course-card fade" onclick="openEnroll()">
+        <div class="icon-sq" style="margin-bottom:1.5rem"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M12 2L2 19h20L12 2z"/></svg></div>
+        <div class="lbl" style="font-size:.55rem;margin-bottom:.4rem">Foundation</div>
+        <h3 style="font-size:1.2rem;margin-bottom:.75rem">Ramp Walk Mastery</h3>
+        <p style="font-size:.82rem;margin-bottom:1.25rem">Learn the art of commanding the ramp with precision, grace, and magnetism. Posture, stride, turns, and stage presence refined to perfection.</p>
+        <div style="display:flex;flex-direction:column;gap:.4rem">
+          <span style="font-size:.75rem;color:rgba(255,240,246,.4);letter-spacing:.1em">⟡ 10 AM – 5 PM · Age 3+ · Hybrid</span>
         </div>
-        <div class="section-label mb-2" style="font-size:.6rem">Foundation</div>
-        <h3 class="font-display text-xl font-light text-ivory mb-3">Ramp Walk Mastery</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed mb-6">Learn the art of commanding the ramp with precision, grace, and magnetism. Posture, stride, turns, and stage presence — all refined to perfection.</p>
-        <div class="space-y-2">
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Batch: 10 AM – 5 PM</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Age: 3 years onwards</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Mode: Hybrid (Online + Offline)</span></div>
-        </div>
-        <div class="mt-6 text-gold/50 font-sans text-xs tracking-widest uppercase">Enroll Now →</div>
+        <div style="margin-top:1.25rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,121,176,.6)">Enroll Now →</div>
       </div>
-
-      <!-- Course 2 -->
-      <div class="course-card p-8 fade-up fade-up-delay-1" onclick="openEnrollModal()">
-        <div class="w-12 h-12 border border-gold/30 flex items-center justify-center mb-6" style="background:rgba(232,113,154,.06)">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M5 3h14M5 21h14M12 3v18M3 12h18"/></svg>
-        </div>
-        <div class="section-label mb-2" style="font-size:.6rem">Runway</div>
-        <h3 class="font-display text-xl font-light text-ivory mb-3">Catwalk & Runway</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed mb-6">Advanced catwalk techniques, turns, and expression training for high-fashion runway. Elevate from aspirant to professional runway model.</p>
-        <div class="space-y-2">
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Batch: 10 AM – 5 PM</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Age: 3 years onwards</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Mode: Hybrid</span></div>
-        </div>
-        <div class="mt-6 text-gold/50 font-sans text-xs tracking-widest uppercase">Enroll Now →</div>
+      <div class="course-card fade d1" onclick="openEnroll()">
+        <div class="icon-sq" style="margin-bottom:1.5rem"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M5 3h14M5 21h14M12 3v18M3 12h18"/></svg></div>
+        <div class="lbl" style="font-size:.55rem;margin-bottom:.4rem">Runway</div>
+        <h3 style="font-size:1.2rem;margin-bottom:.75rem">Catwalk & Runway</h3>
+        <p style="font-size:.82rem;margin-bottom:1.25rem">Advanced catwalk techniques, turns, and expression training for high-fashion runway. Elevate from aspirant to professional runway model.</p>
+        <span style="font-size:.75rem;color:rgba(255,240,246,.4);letter-spacing:.1em">⟡ 10 AM – 5 PM · Age 3+ · Hybrid</span>
+        <div style="margin-top:1.25rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,121,176,.6)">Enroll Now →</div>
       </div>
-
-      <!-- Course 3 — ELITE -->
-      <div class="course-card p-8 fade-up fade-up-delay-2" onclick="openEnrollModal()" style="border-color:rgba(232,113,154,.4)">
-        <div class="flex items-start justify-between mb-4">
-          <div class="w-12 h-12 border border-gold/50 flex items-center justify-center" style="background:rgba(232,113,154,.12)">
-            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,1)" stroke-width="1.5"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
-          </div>
-          <span class="font-sans text-xs text-gold tracking-widest border border-gold/40 px-2 py-1">ELITE</span>
+      <div class="course-card fade d2" onclick="openEnroll()" style="border-color:rgba(255,61,138,.45)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem">
+          <div class="icon-sq"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,1)" stroke-width="1.5"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg></div>
+          <span class="elite-badge">ELITE</span>
         </div>
-        <div class="section-label mb-2" style="font-size:.6rem">Pageant Prep</div>
-        <h3 class="font-display text-xl font-light text-ivory mb-3">Miss India / Bihar / Varanasi Preparation</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed mb-6">Comprehensive pageant training — personality development, Q&A, stage confidence, deportment, and complete image management for Miss India, Miss Bihar & Miss Varanasi.</p>
-        <div class="space-y-2">
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Batch: 10 AM – 5 PM</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Age: 3 years onwards</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Mode: Hybrid</span></div>
-        </div>
-        <div class="mt-6 text-gold font-sans text-xs tracking-widest uppercase">Enroll Now →</div>
+        <div class="lbl" style="font-size:.55rem;margin-bottom:.4rem">Pageant Prep</div>
+        <h3 style="font-size:1.2rem;margin-bottom:.75rem">Miss India / Bihar / Varanasi</h3>
+        <p style="font-size:.82rem;margin-bottom:1.25rem">Comprehensive pageant training — personality development, Q&A, stage confidence, deportment, and image management for pageant success.</p>
+        <span style="font-size:.75rem;color:rgba(255,240,246,.4);letter-spacing:.1em">⟡ 10 AM – 5 PM · Age 3+ · Hybrid</span>
+        <div style="margin-top:1.25rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--pk)">Enroll Now →</div>
       </div>
-
-      <!-- Course 4 -->
-      <div class="course-card p-8 fade-up" onclick="openEnrollModal()">
-        <div class="w-12 h-12 border border-gold/30 flex items-center justify-center mb-6" style="background:rgba(232,113,154,.06)">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"/></svg>
-        </div>
-        <div class="section-label mb-2" style="font-size:.6rem">Specialisation</div>
-        <h3 class="font-display text-xl font-light text-ivory mb-3">Horse Walk Training</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed mb-6">Master the distinctive horse walk — a staple of international fashion weeks. Develop the fluidity, strength, and rhythm this iconic walk demands.</p>
-        <div class="space-y-2">
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Batch: 10 AM – 5 PM</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Age: 3 years onwards</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Mode: Hybrid</span></div>
-        </div>
-        <div class="mt-6 text-gold/50 font-sans text-xs tracking-widest uppercase">Enroll Now →</div>
+      <div class="course-card fade" onclick="openEnroll()">
+        <div class="icon-sq" style="margin-bottom:1.5rem"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75"/></svg></div>
+        <div class="lbl" style="font-size:.55rem;margin-bottom:.4rem">Specialisation</div>
+        <h3 style="font-size:1.2rem;margin-bottom:.75rem">Horse Walk Training</h3>
+        <p style="font-size:.82rem;margin-bottom:1.25rem">Master the distinctive horse walk — a staple of international fashion weeks. Develop the fluidity, strength, and rhythm this iconic walk demands.</p>
+        <span style="font-size:.75rem;color:rgba(255,240,246,.4);letter-spacing:.1em">⟡ 10 AM – 5 PM · Age 3+ · Hybrid</span>
+        <div style="margin-top:1.25rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,121,176,.6)">Enroll Now →</div>
       </div>
-
-      <!-- Course 5 -->
-      <div class="course-card p-8 fade-up fade-up-delay-1" onclick="openEnrollModal()">
-        <div class="w-12 h-12 border border-gold/30 flex items-center justify-center mb-6" style="background:rgba(232,113,154,.06)">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"/></svg>
-        </div>
-        <div class="section-label mb-2" style="font-size:.6rem">Performing Arts</div>
-        <h3 class="font-display text-xl font-light text-ivory mb-3">Dance & Performing Arts</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed mb-6">Complement your modeling with expressive dance training. Our roots in dance excellence mean every student develops rhythm, expression and body language fluency.</p>
-        <div class="space-y-2">
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Batch: 10 AM – 5 PM</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Age: 3 years onwards</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Mode: Hybrid</span></div>
-        </div>
-        <div class="mt-6 text-gold/50 font-sans text-xs tracking-widest uppercase">Enroll Now →</div>
+      <div class="course-card fade d1" onclick="openEnroll()">
+        <div class="icon-sq" style="margin-bottom:1.5rem"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303"/></svg></div>
+        <div class="lbl" style="font-size:.55rem;margin-bottom:.4rem">Performing Arts</div>
+        <h3 style="font-size:1.2rem;margin-bottom:.75rem">Dance & Performing Arts</h3>
+        <p style="font-size:.82rem;margin-bottom:1.25rem">Complement modeling with expressive dance training. Develop rhythm, expression and body language fluency rooted in our dance excellence legacy.</p>
+        <span style="font-size:.75rem;color:rgba(255,240,246,.4);letter-spacing:.1em">⟡ 10 AM – 5 PM · Age 3+ · Hybrid</span>
+        <div style="margin-top:1.25rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,121,176,.6)">Enroll Now →</div>
       </div>
-
-      <!-- Course 6 -->
-      <div class="course-card p-8 fade-up fade-up-delay-2" onclick="openEnrollModal()">
-        <div class="w-12 h-12 border border-gold/30 flex items-center justify-center mb-6" style="background:rgba(232,113,154,.06)">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
-        </div>
-        <div class="section-label mb-2" style="font-size:.6rem">Personal Development</div>
-        <h3 class="font-display text-xl font-light text-ivory mb-3">Grooming & Personality</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs leading-relaxed mb-6">Holistic personality development — skincare, makeup artistry, wardrobe styling, public speaking, etiquette and confidence training for the complete model.</p>
-        <div class="space-y-2">
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Batch: 10 AM – 5 PM</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Age: 3 years onwards</span></div>
-          <div class="flex items-center gap-2"><div class="w-px h-3 bg-gold/40"></div><span class="font-sans text-xs text-ivory/40 tracking-wider">Mode: Hybrid</span></div>
-        </div>
-        <div class="mt-6 text-gold/50 font-sans text-xs tracking-widest uppercase">Enroll Now →</div>
+      <div class="course-card fade d2" onclick="openEnroll()">
+        <div class="icon-sq" style="margin-bottom:1.5rem"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <div class="lbl" style="font-size:.55rem;margin-bottom:.4rem">Personal Development</div>
+        <h3 style="font-size:1.2rem;margin-bottom:.75rem">Grooming & Personality</h3>
+        <p style="font-size:.82rem;margin-bottom:1.25rem">Skincare, makeup artistry, wardrobe styling, public speaking, etiquette and confidence training for the complete model personality.</p>
+        <span style="font-size:.75rem;color:rgba(255,240,246,.4);letter-spacing:.1em">⟡ 10 AM – 5 PM · Age 3+ · Hybrid</span>
+        <div style="margin-top:1.25rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,121,176,.6)">Enroll Now →</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ADMISSION PROCESS -->
-<section class="py-32" style="background:var(--noir)">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16">
-    <div class="text-center mb-16">
-      <div class="section-label mb-4 fade-up">Join Us</div>
-      <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size:clamp(2.5rem,5vw,4rem)">Your Journey <em class="gold-grad not-italic">Begins Here</em></h2>
-      <div class="gold-line w-48 mx-auto mt-6 fade-up fade-up-delay-2"></div>
+<!-- ADMISSION STEPS -->
+<section class="section bg-grad">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lbl fade">Join Us</div>
+      <h2 class="sec-h2 fade d1">Your Journey <em class="pk-grad" style="font-style:normal">Begins Here</em></h2>
+      <hr class="gold-line fade d2" style="max-width:200px;margin:1.2rem auto 0"/>
     </div>
-    <div class="grid md:grid-cols-4 gap-0 relative">
-      <div class="hidden md:block absolute top-12 left-0 right-0" style="height:1px;background:linear-gradient(90deg,transparent,rgba(232,113,154,.2),rgba(232,113,154,.2),transparent);left:12.5%;right:12.5%"></div>
-      <div class="text-center p-8 fade-up">
-        <div class="w-24 h-24 mx-auto flex items-center justify-center border border-gold/30 mb-6" style="background:linear-gradient(135deg,rgba(232,113,154,.08),transparent)"><span class="font-display text-3xl font-light gold-grad">01</span></div>
-        <h3 class="font-display text-lg font-light text-ivory mb-3">Consultation</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs tracking-wide leading-relaxed">Book a free consultation. We understand your goals, strengths, and aspirations.</p>
-      </div>
-      <div class="text-center p-8 fade-up fade-up-delay-1">
-        <div class="w-24 h-24 mx-auto flex items-center justify-center border border-gold/30 mb-6" style="background:linear-gradient(135deg,rgba(232,113,154,.08),transparent)"><span class="font-display text-3xl font-light gold-grad">02</span></div>
-        <h3 class="font-display text-lg font-light text-ivory mb-3">Assessment</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs tracking-wide leading-relaxed">A brief assessment to tailor the perfect program for your unique potential.</p>
-      </div>
-      <div class="text-center p-8 fade-up fade-up-delay-2">
-        <div class="w-24 h-24 mx-auto flex items-center justify-center border border-gold/30 mb-6" style="background:linear-gradient(135deg,rgba(232,113,154,.08),transparent)"><span class="font-display text-3xl font-light gold-grad">03</span></div>
-        <h3 class="font-display text-lg font-light text-ivory mb-3">Admission</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs tracking-wide leading-relaxed">Complete registration, make your payment, and confirm via WhatsApp.</p>
-      </div>
-      <div class="text-center p-8 fade-up fade-up-delay-3">
-        <div class="w-24 h-24 mx-auto flex items-center justify-center border border-gold/50 mb-6" style="background:linear-gradient(135deg,rgba(232,113,154,.15),transparent)"><span class="font-display text-3xl font-light gold-grad">04</span></div>
-        <h3 class="font-display text-lg font-light text-ivory mb-3">Begin Training</h3>
-        <p class="font-sans font-thin text-ivory/40 text-xs tracking-wide leading-relaxed">Step into Elon Modeling Academy and start your transformation today.</p>
-      </div>
+    <div class="steps-grid">
+      <div class="step-line"></div>
+      <div class="step fade"><div class="step-num pk-grad">01</div><h3 style="font-size:1.2rem;margin-bottom:.6rem">Consultation</h3><p>Book a free consultation. We understand your goals, strengths, and aspirations.</p></div>
+      <div class="step fade d1"><div class="step-num pk-grad">02</div><h3 style="font-size:1.2rem;margin-bottom:.6rem">Assessment</h3><p>A brief assessment to tailor the perfect program for your unique potential.</p></div>
+      <div class="step fade d2"><div class="step-num pk-grad">03</div><h3 style="font-size:1.2rem;margin-bottom:.6rem">Admission</h3><p>Complete registration, make your payment, and confirm via WhatsApp.</p></div>
+      <div class="step fade d3"><div class="step-num pk-grad">04</div><h3 style="font-size:1.2rem;margin-bottom:.6rem">Begin Training</h3><p>Step into Elon Modeling Academy and start your transformation today.</p></div>
     </div>
-    <div class="text-center mt-12 fade-up">
-      <button onclick="openEnrollModal()" class="btn-gold px-12 py-4 text-xs rounded-none">Register Now</button>
+    <div style="text-align:center;margin-top:3rem" class="fade">
+      <button class="btn-pk" onclick="openEnroll()" style="padding:1rem 3rem">Register Now</button>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
-<section id="gallery" class="py-32" style="background:var(--noir-soft)">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16">
-    <div class="text-center mb-16">
-      <div class="section-label mb-4 fade-up">Portfolio</div>
-      <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size:clamp(2.5rem,5vw,4rem)">Moments of <em class="gold-grad not-italic">Excellence</em></h2>
-      <div class="gold-line w-48 mx-auto mt-6 fade-up fade-up-delay-2"></div>
+<section class="section bg-noir" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lbl fade">Portfolio</div>
+      <h2 class="sec-h2 fade d1">Moments of <em class="pk-grad" style="font-style:normal">Excellence</em></h2>
+      <hr class="gold-line fade d2" style="max-width:200px;margin:1.2rem auto 0"/>
     </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-12 gap-3 fade-up" style="grid-auto-rows:280px">
-      <div class="col-span-2 md:col-span-5 md:row-span-2 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(232,113,154,.15);transition:border-color .4s" onclick="openLightbox('first_student_giving_pose.jpeg','Modeling Pose · Training Session')">
-        <img src="first_student_giving_pose.jpeg" alt="Elon Academy Student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.85)"/>
-        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background:linear-gradient(180deg,transparent 40%,rgba(10,10,10,.85) 100%)"></div>
-        <div class="absolute bottom-0 left-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
-          <div class="section-label mb-1" style="font-size:.55rem;color:rgba(232,113,154,.9)">Elon Modeling Academy</div>
-          <div class="font-display text-ivory text-base font-light">Training Session · Varanasi</div>
-        </div>
-        <div class="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-400">
-          <div class="border border-gold/40 px-3 py-1" style="background:rgba(10,10,10,.6);backdrop-filter:blur(6px)"><span class="font-sans text-gold text-xs tracking-widest">VIEW</span></div>
-        </div>
+    <div class="gallery-grid fade">
+      <div class="g-tile g1" onclick="openLightbox('first_student_giving_pose.jpeg','Training Session · Varanasi')">
+        <img src="first_student_giving_pose.jpeg" alt="Student"/>
+        <div class="g-overlay"></div>
+        <div class="view-tag">VIEW</div>
+        <div class="g-cap"><div class="lbl" style="font-size:.5rem;color:var(--pk2)">Elon Modeling Academy</div><div class="disp" style="font-size:.95rem">Training Session · Varanasi</div></div>
       </div>
-
-      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(232,113,154,.15);transition:border-color .4s" onclick="openLightbox('second_student_giving_pose.jpeg','Ramp Walk · Academy Floor')">
-        <img src="second_student_giving_pose.jpeg" alt="Second Student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.85);object-position:top"/>
-        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background:rgba(10,10,10,.4)"></div>
-        <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400"><div class="font-display text-ivory text-sm font-light">Ramp Walk · Academy Floor</div></div>
+      <div class="g-tile g2" onclick="openLightbox('second_student_giving_pose.jpeg','Ramp Walk · Academy Floor')">
+        <img src="second_student_giving_pose.jpeg" alt="Student" style="object-position:top"/>
+        <div class="g-overlay"></div><div class="view-tag">VIEW</div>
+        <div class="g-cap"><div class="disp" style="font-size:.9rem">Ramp Walk · Academy Floor</div></div>
       </div>
-
-      <div class="col-span-2 md:col-span-3 relative flex items-center justify-center" style="background:linear-gradient(135deg,rgba(232,113,154,.08),rgba(26,26,26,.95));border:1px solid rgba(232,113,154,.2)">
-        <div class="text-center p-4">
-          <div class="font-display text-5xl font-light gold-grad mb-2">✦</div>
-          <div class="section-label mb-2" style="font-size:.55rem">Student Showcase</div>
-          <div class="font-display text-ivory text-sm font-light leading-snug">Live from the<br/>Academy Floor</div>
+      <div class="g-accent">
+        <div style="text-align:center;padding:1rem">
+          <div class="pk-grad disp" style="font-size:2.5rem">✦</div>
+          <div class="lbl" style="font-size:.5rem;margin-bottom:.4rem">Student Showcase</div>
+          <div class="disp" style="font-size:.9rem;color:var(--ivory);line-height:1.4">Live from the<br/>Academy Floor</div>
         </div>
       </div>
-
-      <div class="col-span-2 md:col-span-4 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(232,113,154,.15);transition:border-color .4s" onclick="openLightbox('first_student_giving_pose2.jpeg','Catwalk Practice · Varanasi')">
-        <img src="first_student_giving_pose2.jpeg" alt="Catwalk Practice" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.85)"/>
-        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background:rgba(10,10,10,.4)"></div>
-        <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400"><div class="font-display text-ivory text-sm font-light">Catwalk Practice · Varanasi</div></div>
+      <div class="g-tile g4" onclick="openLightbox('first_student_giving_pose2.jpeg','Catwalk Practice · Varanasi')">
+        <img src="first_student_giving_pose2.jpeg" alt="Catwalk"/>
+        <div class="g-overlay"></div><div class="view-tag">VIEW</div>
+        <div class="g-cap"><div class="disp" style="font-size:.9rem">Catwalk Practice · Varanasi</div></div>
       </div>
-
-      <div class="col-span-2 md:col-span-3 gallery-photo-tile relative overflow-hidden cursor-pointer group" style="border:1px solid rgba(232,113,154,.15);transition:border-color .4s" onclick="openLightbox('second_student_giving_pose2.jpeg','Pose Training · Elon Academy')">
-        <img src="second_student_giving_pose2.jpeg" alt="Pose Training" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.85)"/>
-        <div class="absolute inset-0 group-hover:opacity-100 opacity-0 transition-opacity duration-400" style="background:linear-gradient(180deg,transparent 50%,rgba(10,10,10,.8) 100%)"></div>
-        <div class="absolute bottom-0 left-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400"><div class="font-display text-ivory text-sm font-light">Pose Training · Elon Academy</div></div>
+      <div class="g-tile g5" onclick="openLightbox('second_student_giving_pose2.jpeg','Pose Training · Elon Academy')">
+        <img src="second_student_giving_pose2.jpeg" alt="Pose Training"/>
+        <div class="g-overlay"></div><div class="view-tag">VIEW</div>
+        <div class="g-cap"><div class="disp" style="font-size:.9rem">Pose Training · Elon Academy</div></div>
       </div>
     </div>
-
-    <!-- LIGHTBOX -->
-    <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center" style="background:rgba(0,0,0,.95);backdrop-filter:blur(20px)" onclick="closeLightbox()">
-      <div class="relative max-w-3xl w-full mx-4" onclick="event.stopPropagation()">
-        <img id="lightboxImg" src="" alt="" class="w-full max-h-screen object-contain" style="border:1px solid rgba(232,113,154,.2);max-height:80vh"/>
-        <div id="lightboxCaption" class="mt-4 text-center font-display text-ivory/60 text-sm font-light tracking-widest"></div>
-        <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-ivory/40 hover:text-gold font-sans text-xs tracking-widest uppercase transition-colors">✕ Close</button>
-      </div>
+  </div>
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <div style="position:relative;max-width:800px;width:100%;margin:0 1rem" onclick="event.stopPropagation()">
+      <img id="lbImg" src="" alt="" style="width:100%;max-height:80vh;object-fit:contain;border:1px solid rgba(255,61,138,.2)"/>
+      <div id="lbCap" style="text-align:center;margin-top:1rem;font-family:'Cormorant Garamond',serif;color:rgba(255,240,246,.55);font-size:.9rem;letter-spacing:.15em"></div>
+      <button onclick="closeLightbox()" style="position:absolute;top:-2.5rem;right:0;background:none;border:none;cursor:pointer;color:rgba(255,240,246,.4);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase">✕ Close</button>
     </div>
   </div>
 </section>
 
-<!-- STUDENTS STRIP -->
-<section class="py-0 relative overflow-hidden" style="background:var(--noir)">
-  <div class="relative" style="height:420px">
-    <div class="absolute inset-0 grid grid-cols-4 gap-0">
-      <div class="relative overflow-hidden"><img src="first_student_giving_pose.jpeg" alt="Student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.75) brightness(.6);transform:scale(1.08)"/></div>
-      <div class="relative overflow-hidden"><img src="second_student_giving_pose.jpeg" alt="Student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.75) brightness(.6);transform:scale(1.08)"/></div>
-      <div class="relative overflow-hidden"><img src="first_student_giving_pose2.jpeg" alt="Student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.75) brightness(.6);transform:scale(1.08)"/></div>
-      <div class="relative overflow-hidden"><img src="second_student_giving_pose2.jpeg" alt="Student" class="w-full h-full object-cover" style="filter:contrast(1.05) saturate(.75) brightness(.6);transform:scale(1.08)"/></div>
-    </div>
-    <div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(10,10,10,.7) 0%,rgba(10,10,10,.35) 50%,rgba(10,10,10,.7) 100%)"></div>
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-      <div class="section-label mb-3 fade-up" style="color:rgba(232,113,154,.8)">Live from the Academy Floor</div>
-      <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size:clamp(2rem,5vw,3.5rem)">Our Students. <em class="gold-grad not-italic">Your Inspiration.</em></h2>
-      <div class="gold-line w-48 mx-auto mt-5 mb-5 fade-up fade-up-delay-2"></div>
-      <p class="font-sans font-thin text-ivory/50 text-xs tracking-widest max-w-lg fade-up fade-up-delay-3" style="letter-spacing:.15em">Every pose, every step, every turn — captured right here at Elon Modeling Academy, Varanasi.</p>
-      <button onclick="openEnrollModal()" class="btn-gold mt-8 px-10 py-3 text-xs rounded-none fade-up fade-up-delay-4">Join Them Today</button>
-    </div>
+<!-- STUDENT STRIP -->
+<div class="strip">
+  <div class="strip-bg">
+    <div><img src="first_student_giving_pose.jpeg" alt=""/></div>
+    <div><img src="second_student_giving_pose.jpeg" alt=""/></div>
+    <div><img src="first_student_giving_pose2.jpeg" alt=""/></div>
+    <div><img src="second_student_giving_pose2.jpeg" alt=""/></div>
   </div>
-</section>
+  <div class="strip-overlay"></div>
+  <div class="strip-content">
+    <div class="lbl fade" style="color:rgba(255,121,176,.85);margin-bottom:.75rem">Live from the Academy Floor</div>
+    <h2 class="sec-h2 fade d1">Our Students. <em class="pk-grad" style="font-style:normal">Your Inspiration.</em></h2>
+    <hr class="gold-line fade d2" style="max-width:200px;margin:1.2rem auto"/>
+    <p class="fade d3" style="font-size:.78rem;letter-spacing:.15em;max-width:420px">Every pose, every step, every turn — captured right here at Elon Modeling Academy, Varanasi.</p>
+    <button class="btn-pk fade d4" onclick="openEnroll()" style="margin-top:2rem;padding:.9rem 2.5rem">Join Them Today</button>
+  </div>
+</div>
 
 <!-- TESTIMONIALS -->
-<section id="testimonials" class="py-32" style="background:var(--noir)">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16">
-    <div class="text-center mb-16">
-      <div class="section-label mb-4 fade-up">Success Stories</div>
-      <h2 class="section-title text-ivory fade-up fade-up-delay-1" style="font-size:clamp(2.5rem,5vw,4rem)">Voices of <em class="gold-grad not-italic">Triumph</em></h2>
-      <div class="gold-line w-48 mx-auto mt-6 fade-up fade-up-delay-2"></div>
+<section class="section bg-pink-blue" id="testimonials">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lbl fade">Success Stories</div>
+      <h2 class="sec-h2 fade d1">Voices of <em class="pk-grad" style="font-style:normal">Triumph</em></h2>
+      <hr class="gold-line fade d2" style="max-width:200px;margin:1.2rem auto 0"/>
     </div>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="testimonial-card pl-6 py-2 fade-up">
-        <div class="font-display text-5xl font-light text-gold/25 mb-4 leading-none">"</div>
-        <p class="font-sans font-light text-ivory/70 text-base leading-relaxed mb-6" style="letter-spacing:.04em">Joining Elon Modeling Academy was the best decision of my life. From zero confidence on stage to winning a regional beauty contest — the transformation was remarkable. Arya sir's guidance is truly exceptional.</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center" style="background:rgba(232,113,154,.08)"><span class="font-display text-gold text-lg font-light">P</span></div>
-          <div><div class="font-sans text-sm text-ivory/85 tracking-wider">Priya Sharma</div><div class="section-label mt-0.5">Bihar, Regional Winner</div></div>
+    <div class="testi-grid">
+      <div class="testi fade">
+        <div class="quote-mark">"</div>
+        <p style="margin-bottom:1.25rem">Joining Elon Modeling Academy was the best decision of my life. From zero confidence on stage to winning a regional beauty contest — the transformation was remarkable. Arya sir's guidance is truly exceptional.</p>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div class="testi-av"><span class="pk-grad">P</span></div>
+          <div><div style="font-size:.9rem;color:var(--ivory);letter-spacing:.1em">Priya Sharma</div><div class="lbl" style="font-size:.55rem;margin-top:.2rem">Bihar, Regional Winner</div></div>
         </div>
       </div>
-      <div class="testimonial-card pl-6 py-2 fade-up fade-up-delay-1">
-        <div class="font-display text-5xl font-light text-gold/25 mb-4 leading-none">"</div>
-        <p class="font-sans font-light text-ivory/70 text-base leading-relaxed mb-6" style="letter-spacing:.04em">I always wanted to pursue modeling but had no direction. Shivani ma'am and Rajveer sir built my skills from scratch. The ramp walk and horse walk training is absolutely world-class.</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center" style="background:rgba(232,113,154,.08)"><span class="font-display text-gold text-lg font-light">A</span></div>
-          <div><div class="font-sans text-sm text-ivory/85 tracking-wider">Aman Singh</div><div class="section-label mt-0.5">Sasaram, Model</div></div>
+      <div class="testi fade d1">
+        <div class="quote-mark">"</div>
+        <p style="margin-bottom:1.25rem">I always wanted to pursue modeling but had no direction. Shivani ma'am and Rajveer sir built my skills from scratch. The ramp walk and horse walk training is absolutely world-class.</p>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div class="testi-av"><span class="pk-grad">A</span></div>
+          <div><div style="font-size:.9rem;color:var(--ivory);letter-spacing:.1em">Aman Singh</div><div class="lbl" style="font-size:.55rem;margin-top:.2rem">Sasaram, Model</div></div>
         </div>
       </div>
-      <div class="testimonial-card pl-6 py-2 fade-up fade-up-delay-2">
-        <div class="font-display text-5xl font-light text-gold/25 mb-4 leading-none">"</div>
-        <p class="font-sans font-light text-ivory/70 text-base leading-relaxed mb-6" style="letter-spacing:.04em">At just 7 years old, my daughter started training here. The faculty is incredibly patient, nurturing, and professional. She performed at the state-level event with outstanding confidence.</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center" style="background:rgba(232,113,154,.08)"><span class="font-display text-gold text-lg font-light">R</span></div>
-          <div><div class="font-sans text-sm text-ivory/85 tracking-wider">Rekha Gupta</div><div class="section-label mt-0.5">Parent, Varanasi</div></div>
+      <div class="testi fade d2">
+        <div class="quote-mark">"</div>
+        <p style="margin-bottom:1.25rem">At just 7 years old, my daughter started training here. The faculty is incredibly patient, nurturing, and professional. She performed at the state-level event with outstanding confidence.</p>
+        <div style="display:flex;align-items:center;gap:.75rem">
+          <div class="testi-av"><span class="pk-grad">R</span></div>
+          <div><div style="font-size:.9rem;color:var(--ivory);letter-spacing:.1em">Rekha Gupta</div><div class="lbl" style="font-size:.55rem;margin-top:.2rem">Parent, Varanasi</div></div>
         </div>
       </div>
     </div>
@@ -607,83 +607,58 @@ footer .text-ivory\/40{color:rgba(250,247,242,.6)!important}
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-32" style="background:var(--noir-soft)">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16">
-    <div class="grid lg:grid-cols-2 gap-20 items-start">
+<section class="section bg-pk-blue" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
       <div>
-        <div class="section-label mb-4 fade-up">Get In Touch</div>
-        <h2 class="section-title text-ivory mb-8 fade-up fade-up-delay-1" style="font-size:clamp(2.5rem,5vw,4rem)">Let's Start <em class="gold-grad not-italic">Together</em></h2>
-        <div class="gold-line mb-10 fade-up fade-up-delay-2"></div>
-        <div class="space-y-8 fade-up fade-up-delay-2">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 border border-gold/30 flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(232,113,154,.06)">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
-            </div>
-            <div>
-              <div class="section-label mb-1">Location</div>
-              <p class="font-sans font-thin text-ivory/60 text-sm leading-relaxed">DLW, Mauadih (Main Office)<br/>Varanasi, Uttar Pradesh</p>
-              <p class="font-sans font-thin text-gold/50 text-xs mt-1 tracking-wider">Targeting Full Varanasi</p>
-            </div>
+        <div class="lbl fade">Get In Touch</div>
+        <h2 class="sec-h2 fade d1">Let's Start <em class="pk-grad" style="font-style:normal">Together</em></h2>
+        <hr class="gold-line fade d2" style="margin:1.5rem 0 2rem"/>
+        <div class="fade d2">
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div>
+            <div><div class="lbl" style="margin-bottom:.3rem">Location</div><p>DLW, Mauadih (Main Office)<br/>Varanasi, Uttar Pradesh</p><div style="font-size:.72rem;color:rgba(255,121,176,.5);margin-top:.3rem;letter-spacing:.15em">Targeting Full Varanasi</div></div>
           </div>
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 border border-gold/30 flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(232,113,154,.06)">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-            </div>
-            <div>
-              <div class="section-label mb-1">Phone & WhatsApp</div>
-              <a href="tel:+916202377003" class="font-display text-xl font-light text-ivory hover:text-gold transition-colors">+91 62023 77003</a>
-              <div class="mt-1"><a href="https://wa.me/916202377003" target="_blank" class="font-sans font-thin text-gold/60 text-xs tracking-wider hover:text-gold transition-colors">→ WhatsApp Direct Enquiry</a></div>
-            </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></div>
+            <div><div class="lbl" style="margin-bottom:.3rem">Phone & WhatsApp</div><a href="tel:+916202377003" style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--ivory)">+91 62023 77003</a><div style="margin-top:.3rem"><a href="https://wa.me/916202377003" target="_blank" style="font-size:.75rem;color:rgba(255,121,176,.65);letter-spacing:.12em">→ WhatsApp Direct Enquiry</a></div></div>
           </div>
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 border border-gold/30 flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(232,113,154,.06)">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="rgba(232,113,154,.8)" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-            </div>
-            <div>
-              <div class="section-label mb-1">Email</div>
-              <a href="mailto:elonacademy@gmail.com" class="font-sans font-thin text-ivory/60 text-sm hover:text-gold transition-colors">elonacademy@gmail.com</a>
-            </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(255,61,138,.85)" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div>
+            <div><div class="lbl" style="margin-bottom:.3rem">Email</div><a href="mailto:elonacademy@gmail.com" style="font-size:.9rem;color:rgba(255,240,246,.6)">elonacademy@gmail.com</a></div>
           </div>
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 border border-gold/30 flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(232,113,154,.06)">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(232,113,154,.8)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </div>
-            <div>
-              <div class="section-label mb-1">Instagram</div>
-              <a href="https://instagram.com/elonacademy" target="_blank" class="font-sans font-thin text-ivory/60 text-sm hover:text-gold transition-colors">@elonacademy</a>
-            </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,61,138,.85)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+            <div><div class="lbl" style="margin-bottom:.3rem">Instagram</div><a href="https://instagram.com/elonacademy" target="_blank" style="font-size:.9rem;color:rgba(255,240,246,.6)">@elonacademy</a></div>
           </div>
         </div>
       </div>
-
-      <div class="glass-card p-8 lg:p-10 fade-up fade-up-delay-2">
-        <h3 class="font-display text-2xl font-light text-ivory mb-2">Send an Enquiry</h3>
-        <p class="font-sans font-light text-ivory/55 text-sm tracking-wider mb-8">We respond within 24 hours. Or WhatsApp us directly for faster response.</p>
-        <form id="contactForm" class="space-y-6" onsubmit="handleContactForm(event)">
-          <div><label class="form-label block mb-2">Full Name</label><input type="text" placeholder="Your full name" class="form-input w-full px-4 py-3 text-sm" required/></div>
-          <div class="grid grid-cols-2 gap-4">
-            <div><label class="form-label block mb-2">Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX" class="form-input w-full px-4 py-3 text-sm" required/></div>
-            <div><label class="form-label block mb-2">City</label><input type="text" placeholder="Your city" class="form-input w-full px-4 py-3 text-sm" required/></div>
+      <div class="card fade d2" style="padding:2.5rem">
+        <h3 style="font-size:1.4rem;margin-bottom:.5rem">Send an Enquiry</h3>
+        <p style="margin-bottom:2rem">We respond within 24 hours. Or WhatsApp us directly for faster response.</p>
+        <form id="contactForm" onsubmit="handleContact(event)">
+          <div style="margin-bottom:1.25rem"><label class="form-lbl">Full Name</label><input type="text" placeholder="Your full name" class="form-input" required/></div>
+          <div class="form-grid-2" style="margin-bottom:1.25rem">
+            <div><label class="form-lbl">Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX" class="form-input" required/></div>
+            <div><label class="form-lbl">City</label><input type="text" placeholder="Your city" class="form-input" required/></div>
           </div>
-          <div>
-            <label class="form-label block mb-2">Program Interest</label>
-            <select class="form-input w-full px-4 py-3 text-sm text-ivory/60">
-              <option value="" style="background:#141414">Select a program</option>
-              <option style="background:#141414">Ramp Walk Mastery</option>
-              <option style="background:#141414">Catwalk & Runway</option>
-              <option style="background:#141414">Miss India / Bihar / Varanasi Preparation</option>
-              <option style="background:#141414">Horse Walk Training</option>
-              <option style="background:#141414">Dance & Performing Arts</option>
-              <option style="background:#141414">Grooming & Personality</option>
+          <div style="margin-bottom:1.25rem">
+            <label class="form-lbl">Program Interest</label>
+            <select class="form-input">
+              <option value="">Select a program</option>
+              <option>Ramp Walk Mastery</option><option>Catwalk & Runway</option>
+              <option>Miss India / Bihar / Varanasi Preparation</option>
+              <option>Horse Walk Training</option><option>Dance & Performing Arts</option>
+              <option>Grooming & Personality</option>
             </select>
           </div>
-          <div><label class="form-label block mb-2">Message</label><textarea rows="4" placeholder="Tell us about your goals..." class="form-input w-full px-4 py-3 text-sm resize-none"></textarea></div>
-          <button type="submit" class="btn-gold w-full py-4 text-xs rounded-none">Send Enquiry</button>
+          <div style="margin-bottom:1.5rem"><label class="form-lbl">Message</label><textarea rows="3" placeholder="Tell us about your goals..." class="form-input" style="resize:none"></textarea></div>
+          <button type="submit" class="btn-pk" style="width:100%;padding:1rem">Send Enquiry</button>
         </form>
-        <div id="contactSuccess" class="hidden text-center py-8">
-          <div class="font-display text-4xl font-light gold-grad mb-2">✓</div>
-          <div class="font-display text-xl font-light text-ivory mb-2">Enquiry Received</div>
-          <p class="font-sans font-thin text-ivory/40 text-xs tracking-wider">We'll be in touch shortly. You can also WhatsApp us at +91 62023 77003.</p>
+        <div id="contactSuccess" style="display:none;text-align:center;padding:2rem 0">
+          <div class="pk-grad disp" style="font-size:2.5rem;margin-bottom:.5rem">✓</div>
+          <div class="disp" style="font-size:1.3rem;color:var(--ivory);margin-bottom:.5rem">Enquiry Received</div>
+          <p>We'll be in touch shortly. You can also WhatsApp us at +91 62023 77003.</p>
         </div>
       </div>
     </div>
@@ -691,224 +666,183 @@ footer .text-ivory\/40{color:rgba(250,247,242,.6)!important}
 </section>
 
 <!-- FOOTER -->
-<footer style="background:var(--noir);border-top:1px solid rgba(232,113,154,.15)">
-  <div class="max-w-7xl mx-auto px-8 lg:px-16 py-16">
-    <div class="grid md:grid-cols-4 gap-12 mb-12">
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 border border-gold flex items-center justify-center"><span class="gold-text font-display font-light text-xl">E</span></div>
-          <div><div class="font-display font-light text-ivory tracking-widest">ELON</div><div class="font-sans font-thin text-xs tracking-[0.3em]" style="color:rgba(232,113,154,.6)">MODELING ACADEMY</div></div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-box" style="margin-bottom:1rem">
+          <div class="logo-sq"><span>E</span></div>
+          <div><div class="logo-txt" style="color:var(--ivory)">ELON</div><div class="logo-sub">MODELING ACADEMY</div></div>
         </div>
-        <p class="font-sans font-light text-ivory/45 text-sm leading-relaxed mb-6 max-w-xs" style="letter-spacing:.04em">Varanasi's premier destination for modeling excellence. From Sasaram to Varanasi — training icons for the national stage.</p>
-        <div class="flex gap-3">
-          <a href="https://wa.me/916202377003" target="_blank" class="w-9 h-9 border border-gold/20 flex items-center justify-center hover:border-gold/60 transition-colors">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(232,113,154,.6)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          </a>
-          <a href="https://instagram.com/elonacademy" target="_blank" class="w-9 h-9 border border-gold/20 flex items-center justify-center hover:border-gold/60 transition-colors">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(232,113,154,.6)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
+        <p style="max-width:280px;font-size:.82rem">Varanasi's premier destination for modeling excellence. From Sasaram to Varanasi — training icons for the national stage.</p>
+        <div class="social-row">
+          <a href="https://wa.me/916202377003" target="_blank" class="social-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="rgba(255,61,138,.65)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="https://instagram.com/elonacademy" target="_blank" class="social-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="rgba(255,61,138,.65)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
         </div>
       </div>
       <div>
-        <div class="section-label mb-5">Quick Links</div>
-        <ul class="space-y-3">
-          <li><a href="#about" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">About Us</a></li>
-          <li><a href="#courses" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">Programs</a></li>
-          <li><a href="#instructors" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">Faculty</a></li>
-          <li><a href="#gallery" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">Gallery</a></li>
-          <li><a href="#testimonials" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">Success Stories</a></li>
-          <li><a href="#" onclick="openEnrollModal()" class="font-sans font-thin text-gold/60 text-xs tracking-wider hover:text-gold transition-colors">Enroll Now</a></li>
+        <div class="lbl" style="margin-bottom:1.25rem">Quick Links</div>
+        <ul class="foot-links">
+          <li><a href="#about">About Us</a></li><li><a href="#courses">Programs</a></li>
+          <li><a href="#instructors">Faculty</a></li><li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Success Stories</a></li>
+          <li><a href="#" onclick="openEnroll()" style="color:rgba(255,121,176,.6)">Enroll Now</a></li>
         </ul>
       </div>
       <div>
-        <div class="section-label mb-5">Legal</div>
-        <ul class="space-y-3">
-          <li><a href="#" onclick="openModal('privacy')" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">Privacy Policy</a></li>
-          <li><a href="#" onclick="openModal('terms')" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">Terms & Conditions</a></li>
-          <li><a href="#" onclick="openModal('refund')" class="font-sans font-thin text-ivory/40 text-xs tracking-wider hover:text-gold transition-colors">Refund Policy</a></li>
+        <div class="lbl" style="margin-bottom:1.25rem">Legal</div>
+        <ul class="foot-links">
+          <li><a href="#" onclick="openLegal('privacy')">Privacy Policy</a></li>
+          <li><a href="#" onclick="openLegal('terms')">Terms & Conditions</a></li>
+          <li><a href="#" onclick="openLegal('refund')">Refund Policy</a></li>
         </ul>
       </div>
     </div>
-    <div class="gold-line mb-8"></div>
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="font-sans font-thin text-ivory/20 text-xs tracking-wider">© 2025 Elon Modeling Academy, Varanasi. All rights reserved.</p>
-      <p class="font-sans font-thin text-ivory/15 text-xs tracking-wider">DLW, Mauadih, Varanasi, Uttar Pradesh</p>
+    <hr class="gold-line" style="margin-bottom:1.5rem"/>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem">
+      <p style="font-size:.72rem;color:rgba(255,240,246,.2)">© 2025 Elon Modeling Academy, Varanasi. All rights reserved.</p>
+      <p style="font-size:.72rem;color:rgba(255,240,246,.15)">DLW, Mauadih, Varanasi, Uttar Pradesh</p>
     </div>
   </div>
 </footer>
 
 <!-- ENROLL MODAL -->
-<div class="modal-overlay" id="enrollModal">
-  <div class="modal-box w-full max-w-xl mx-auto">
-    <div class="flex items-center justify-between p-6 border-b border-gold/15">
-      <div>
-        <div class="section-label mb-1" style="font-size:.55rem">Registration</div>
-        <h3 class="font-display text-xl font-light text-ivory">Join Elon Modeling Academy</h3>
-      </div>
-      <button onclick="closeEnrollModal()" class="text-ivory/40 hover:text-gold transition-colors">
-        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
+<div class="modal" id="enrollModal" onclick="closeEnroll()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-head">
+      <div><div class="lbl" style="font-size:.5rem;margin-bottom:.25rem">Registration</div><h3 style="font-size:1.3rem">Join Elon Modeling Academy</h3></div>
+      <button class="close-btn" onclick="closeEnroll()"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg></button>
     </div>
-    <div id="enrollFormSection" class="p-6">
-      <form id="enrollForm" class="space-y-5" onsubmit="handleEnrollSubmit(event)">
-        <div class="grid grid-cols-2 gap-4">
-          <div><label class="form-label block mb-2">Full Name *</label><input type="text" id="eName" placeholder="Your name" class="form-input w-full px-4 py-3 text-sm" required/></div>
-          <div><label class="form-label block mb-2">Age *</label><input type="number" id="eAge" min="3" placeholder="Age" class="form-input w-full px-4 py-3 text-sm" required/></div>
+    <div id="enrollForm" class="modal-body">
+      <form onsubmit="showPayment(event)">
+        <div class="form-grid-2" style="margin-bottom:1rem">
+          <div><label class="form-lbl">Full Name *</label><input type="text" id="eName" placeholder="Your name" class="form-input" required/></div>
+          <div><label class="form-lbl">Age *</label><input type="number" id="eAge" min="3" placeholder="Age" class="form-input" required/></div>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <div><label class="form-label block mb-2">Phone *</label><input type="tel" id="ePhone" placeholder="+91 XXXXX XXXXX" class="form-input w-full px-4 py-3 text-sm" required/></div>
-          <div><label class="form-label block mb-2">City *</label><input type="text" id="eCity" placeholder="Your city" class="form-input w-full px-4 py-3 text-sm" required/></div>
+        <div class="form-grid-2" style="margin-bottom:1rem">
+          <div><label class="form-lbl">Phone *</label><input type="tel" id="ePhone" placeholder="+91 XXXXX" class="form-input" required/></div>
+          <div><label class="form-lbl">City *</label><input type="text" id="eCity" placeholder="Your city" class="form-input" required/></div>
         </div>
-        <div><label class="form-label block mb-2">Preferred Venue / Location *</label><input type="text" id="eVenue" placeholder="e.g. DLW, Mauadih or Online" class="form-input w-full px-4 py-3 text-sm" required/></div>
-        <div>
-          <label class="form-label block mb-2">Program *</label>
-          <select id="eProgram" class="form-input w-full px-4 py-3 text-sm text-ivory/60" style="background:#141414" required>
+        <div style="margin-bottom:1rem"><label class="form-lbl">Venue / Location *</label><input type="text" placeholder="e.g. DLW, Mauadih or Online" class="form-input" required/></div>
+        <div style="margin-bottom:1rem">
+          <label class="form-lbl">Program *</label>
+          <select id="eProgram" class="form-input" required>
             <option value="">Select a program</option>
-            <option>Ramp Walk Mastery</option>
-            <option>Catwalk & Runway</option>
+            <option>Ramp Walk Mastery</option><option>Catwalk & Runway</option>
             <option>Miss India / Bihar / Varanasi Preparation</option>
-            <option>Horse Walk Training</option>
-            <option>Dance & Performing Arts</option>
-            <option>Grooming & Personality</option>
+            <option>Horse Walk Training</option><option>Dance & Performing Arts</option><option>Grooming & Personality</option>
           </select>
         </div>
-        <div><label class="form-label block mb-2">Email (Optional)</label><input type="email" id="eEmail" placeholder="your@email.com" class="form-input w-full px-4 py-3 text-sm"/></div>
-        <button type="submit" class="btn-gold w-full py-4 text-xs rounded-none">Proceed to Payment</button>
+        <div style="margin-bottom:1.5rem"><label class="form-lbl">Email (Optional)</label><input type="email" placeholder="your@email.com" class="form-input"/></div>
+        <button type="submit" class="btn-pk" style="width:100%;padding:1rem">Proceed to Payment</button>
       </form>
     </div>
-
-    <div id="paymentSection" class="hidden p-6">
-      <div class="text-center mb-6">
-        <div class="font-display text-3xl font-light gold-grad mb-1">Payment</div>
-        <p class="font-sans font-thin text-ivory/40 text-xs tracking-wider">Scan the QR below to pay your registration fee</p>
+    <div id="paymentSection" style="display:none" class="modal-body">
+      <div style="text-align:center;margin-bottom:1.5rem">
+        <div class="pk-grad disp" style="font-size:1.8rem;margin-bottom:.4rem">Payment</div>
+        <p>Scan the QR below to pay your registration fee</p>
       </div>
-      <div class="qr-box p-6 text-center mb-6 rounded-none">
-        <div class="w-48 h-48 mx-auto border border-gold/30 flex items-center justify-center mb-4" style="background:white">
-          <svg viewBox="0 0 100 100" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+      <div style="background:linear-gradient(135deg,rgba(255,61,138,.08),rgba(22,11,46,.95));border:1px solid rgba(255,61,138,.25);padding:1.5rem;text-align:center;margin-bottom:1.25rem">
+        <div style="width:180px;height:180px;margin:0 auto;background:white;border:1px solid rgba(255,61,138,.3);display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
+          <svg viewBox="0 0 100 100" width="165" height="165" xmlns="http://www.w3.org/2000/svg">
             <rect width="100" height="100" fill="white"/>
-            <rect x="5" y="5" width="25" height="25" fill="none" stroke="#E8719A" stroke-width="3"/><rect x="9" y="9" width="17" height="17" fill="#E8719A"/>
-            <rect x="70" y="5" width="25" height="25" fill="none" stroke="#E8719A" stroke-width="3"/><rect x="74" y="9" width="17" height="17" fill="#E8719A"/>
-            <rect x="5" y="70" width="25" height="25" fill="none" stroke="#E8719A" stroke-width="3"/><rect x="9" y="74" width="17" height="17" fill="#E8719A"/>
+            <rect x="5" y="5" width="25" height="25" fill="none" stroke="#FF3D8A" stroke-width="3"/><rect x="9" y="9" width="17" height="17" fill="#FF3D8A"/>
+            <rect x="70" y="5" width="25" height="25" fill="none" stroke="#FF3D8A" stroke-width="3"/><rect x="74" y="9" width="17" height="17" fill="#FF3D8A"/>
+            <rect x="5" y="70" width="25" height="25" fill="none" stroke="#FF3D8A" stroke-width="3"/><rect x="9" y="74" width="17" height="17" fill="#FF3D8A"/>
             <rect x="35" y="5" width="5" height="5" fill="#0A0A0A"/><rect x="45" y="5" width="5" height="5" fill="#0A0A0A"/><rect x="55" y="5" width="5" height="5" fill="#0A0A0A"/>
             <rect x="35" y="15" width="5" height="5" fill="#0A0A0A"/><rect x="55" y="15" width="5" height="5" fill="#0A0A0A"/>
             <rect x="35" y="25" width="5" height="5" fill="#0A0A0A"/><rect x="45" y="25" width="5" height="5" fill="#0A0A0A"/><rect x="55" y="25" width="5" height="5" fill="#0A0A0A"/>
             <rect x="5" y="35" width="5" height="5" fill="#0A0A0A"/><rect x="15" y="35" width="5" height="5" fill="#0A0A0A"/><rect x="25" y="35" width="5" height="5" fill="#0A0A0A"/>
             <rect x="35" y="35" width="5" height="5" fill="#0A0A0A"/><rect x="50" y="35" width="5" height="5" fill="#0A0A0A"/><rect x="60" y="35" width="5" height="5" fill="#0A0A0A"/>
-            <rect x="70" y="35" width="5" height="5" fill="#0A0A0A"/><rect x="85" y="35" width="5" height="5" fill="#0A0A0A"/><rect x="95" y="35" width="5" height="5" fill="#0A0A0A"/>
+            <rect x="70" y="35" width="5" height="5" fill="#0A0A0A"/><rect x="85" y="35" width="5" height="5" fill="#0A0A0A"/>
             <rect x="5" y="45" width="5" height="5" fill="#0A0A0A"/><rect x="20" y="45" width="5" height="5" fill="#0A0A0A"/><rect x="35" y="45" width="5" height="5" fill="#0A0A0A"/>
-            <rect x="45" y="45" width="5" height="5" fill="#0A0A0A"/><rect x="60" y="45" width="5" height="5" fill="#0A0A0A"/><rect x="75" y="45" width="5" height="5" fill="#0A0A0A"/><rect x="90" y="45" width="5" height="5" fill="#0A0A0A"/>
+            <rect x="45" y="45" width="5" height="5" fill="#0A0A0A"/><rect x="60" y="45" width="5" height="5" fill="#0A0A0A"/><rect x="75" y="45" width="5" height="5" fill="#0A0A0A"/>
             <rect x="5" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="15" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="30" y="55" width="5" height="5" fill="#0A0A0A"/>
-            <rect x="40" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="55" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="65" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="80" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="95" y="55" width="5" height="5" fill="#0A0A0A"/>
-            <rect x="35" y="65" width="5" height="5" fill="#0A0A0A"/><rect x="50" y="65" width="5" height="5" fill="#0A0A0A"/><rect x="65" y="65" width="5" height="5" fill="#0A0A0A"/><rect x="80" y="65" width="5" height="5" fill="#0A0A0A"/>
-            <rect x="35" y="75" width="5" height="5" fill="#0A0A0A"/><rect x="45" y="75" width="5" height="5" fill="#0A0A0A"/><rect x="60" y="75" width="5" height="5" fill="#0A0A0A"/><rect x="75" y="75" width="5" height="5" fill="#0A0A0A"/><rect x="90" y="75" width="5" height="5" fill="#0A0A0A"/>
+            <rect x="40" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="55" y="55" width="5" height="5" fill="#0A0A0A"/><rect x="65" y="55" width="5" height="5" fill="#0A0A0A"/>
+            <rect x="35" y="65" width="5" height="5" fill="#0A0A0A"/><rect x="50" y="65" width="5" height="5" fill="#0A0A0A"/><rect x="65" y="65" width="5" height="5" fill="#0A0A0A"/>
+            <rect x="35" y="75" width="5" height="5" fill="#0A0A0A"/><rect x="45" y="75" width="5" height="5" fill="#0A0A0A"/><rect x="60" y="75" width="5" height="5" fill="#0A0A0A"/><rect x="75" y="75" width="5" height="5" fill="#0A0A0A"/>
             <rect x="35" y="85" width="5" height="5" fill="#0A0A0A"/><rect x="50" y="85" width="5" height="5" fill="#0A0A0A"/><rect x="65" y="85" width="5" height="5" fill="#0A0A0A"/>
-            <rect x="35" y="95" width="5" height="5" fill="#0A0A0A"/><rect x="45" y="95" width="5" height="5" fill="#0A0A0A"/><rect x="60" y="95" width="5" height="5" fill="#0A0A0A"/><rect x="75" y="95" width="5" height="5" fill="#0A0A0A"/><rect x="90" y="95" width="5" height="5" fill="#0A0A0A"/>
-            <text x="50" y="55" text-anchor="middle" font-family="serif" font-size="10" fill="#E8719A" font-weight="bold">EMA</text>
+            <text x="50" y="55" text-anchor="middle" font-family="serif" font-size="9" fill="#FF3D8A" font-weight="bold">EMA</text>
           </svg>
         </div>
-        <div class="section-label mb-1" style="font-size:.6rem">Pay to Elon Modeling Academy</div>
-        <p class="font-sans font-thin text-ivory/40 text-xs">UPI / PhonePe / Google Pay / Paytm</p>
-        <p class="font-sans font-thin text-gold/60 text-xs mt-2 tracking-wider">+91 62023 77003</p>
+        <div class="lbl" style="font-size:.55rem;margin-bottom:.3rem">Pay to Elon Modeling Academy</div>
+        <p style="font-size:.78rem">UPI / PhonePe / Google Pay / Paytm</p>
+        <div style="color:rgba(255,121,176,.7);font-size:.8rem;margin-top:.4rem;letter-spacing:.15em">+91 62023 77003</div>
       </div>
-      <div class="border border-gold/20 p-4 mb-6" style="background:rgba(232,113,154,.04)">
-        <div class="flex items-start gap-3">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="rgba(232,113,154,.8)" class="mt-0.5 flex-shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          <div>
-            <div class="section-label mb-1" style="font-size:.55rem">Important Instructions</div>
-            <p class="font-sans font-thin text-ivory/50 text-xs leading-relaxed">After payment, take a screenshot and send it to our WhatsApp <strong class="text-gold">+91 62023 77003</strong> along with your name and registered phone number for confirmation.</p>
-          </div>
-        </div>
+      <div style="background:rgba(255,61,138,.05);border:1px solid rgba(255,61,138,.2);padding:1rem;margin-bottom:1.25rem">
+        <p style="font-size:.78rem">After payment, send screenshot to WhatsApp <strong style="color:var(--pk2)">+91 62023 77003</strong> with your name and phone number for confirmation.</p>
       </div>
-      <a href="https://wa.me/916202377003?text=Hi%2C%20I%20have%20completed%20my%20registration%20and%20payment%20for%20Elon%20Modeling%20Academy.%20Please%20find%20my%20payment%20screenshot%20attached." target="_blank" class="btn-gold w-full py-4 text-xs rounded-none text-center block">Send Payment Screenshot on WhatsApp</a>
-      <button onclick="closeEnrollModal()" class="btn-outline-gold w-full py-3 text-xs rounded-none mt-3">Close</button>
+      <a href="https://wa.me/916202377003?text=Hi%2C%20I%20have%20completed%20my%20registration%20and%20payment%20for%20Elon%20Modeling%20Academy." target="_blank" class="btn-pk" style="display:block;text-align:center;padding:1rem;margin-bottom:.75rem">Send Payment Screenshot on WhatsApp</a>
+      <button onclick="closeEnroll()" class="btn-out" style="width:100%;padding:.75rem">Close</button>
     </div>
   </div>
 </div>
 
-<!-- PROFILE OVERLAY -->
-<div class="profile-overlay" id="profileOverlay">
-  <div class="w-full max-w-2xl mx-auto" style="background:#141414;border:1px solid rgba(232,113,154,.25)">
-    <div class="flex items-center justify-between p-6 border-b border-gold/15">
-      <div class="section-label" style="font-size:.55rem">Faculty Profile</div>
-      <button onclick="closeProfile()" class="text-ivory/40 hover:text-gold transition-colors">
-        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
+<!-- PROFILE MODAL -->
+<div class="prof-modal" id="profModal" onclick="closeProfile()">
+  <div class="prof-box" onclick="event.stopPropagation()">
+    <div class="modal-head">
+      <div class="lbl" style="font-size:.5rem">Faculty Profile</div>
+      <button class="close-btn" onclick="closeProfile()"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg></button>
     </div>
-    <div id="profileContent" class="p-8"></div>
+    <div id="profContent" style="padding:2rem"></div>
   </div>
 </div>
 
 <!-- LEGAL MODAL -->
-<div class="modal-overlay" id="legalModal">
-  <div class="modal-box w-full max-w-2xl mx-auto">
-    <div class="flex items-center justify-between p-6 border-b border-gold/15">
-      <h3 class="font-display text-xl font-light text-ivory" id="legalTitle">Policy</h3>
-      <button onclick="closeModal()" class="text-ivory/40 hover:text-gold transition-colors">
-        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
+<div class="modal" id="legalModal" onclick="closeLegal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-head">
+      <h3 id="legalTitle" style="font-size:1.3rem">Policy</h3>
+      <button class="close-btn" onclick="closeLegal()"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg></button>
     </div>
-    <div class="p-6 font-sans font-thin text-ivory/50 text-xs leading-relaxed space-y-4" id="legalContent"></div>
+    <div id="legalContent" class="modal-body" style="font-size:.82rem;line-height:1.9;color:rgba(255,240,246,.55)"></div>
   </div>
 </div>
 
 <script>
 // CURSOR
-const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
+const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
 let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px'});
-(function animateRing(){rx+=(mx-rx)*.08;ry+=(my-ry)*.08;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animateRing)})();
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function loop(){rx+=(mx-rx)*.08;ry+=(my-ry)*.08;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop)})();
 
 // SCROLL REVEAL
-const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+const obs=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('vis')}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
 
 // MENU
-function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
-function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
+const toggleMenu=()=>document.getElementById('mobileMenu').classList.toggle('open');
+const closeMenu=()=>document.getElementById('mobileMenu').classList.remove('open');
 
-// ENROLL MODAL
-function openEnrollModal(){document.getElementById('enrollModal').classList.add('active');document.getElementById('enrollFormSection').classList.remove('hidden');document.getElementById('paymentSection').classList.add('hidden');document.body.style.overflow='hidden'}
-function closeEnrollModal(){document.getElementById('enrollModal').classList.remove('active');document.body.style.overflow=''}
-document.getElementById('enrollModal').addEventListener('click',e=>{if(e.target===document.getElementById('enrollModal'))closeEnrollModal()});
+// ENROLL
+const openEnroll=()=>{document.getElementById('enrollModal').classList.add('open');document.body.style.overflow='hidden'};
+const closeEnroll=()=>{document.getElementById('enrollModal').classList.remove('open');document.body.style.overflow=''};
+const showPayment=e=>{e.preventDefault();if(!document.getElementById('eProgram').value){alert('Please select a program.');return}document.getElementById('enrollForm').style.display='none';document.getElementById('paymentSection').style.display='block'};
 
-function handleEnrollSubmit(e){
-  e.preventDefault();
-  if(!document.getElementById('eProgram').value){alert('Please select a program.');return}
-  document.getElementById('enrollFormSection').classList.add('hidden');
-  document.getElementById('paymentSection').classList.remove('hidden');
-}
+// CONTACT
+const handleContact=e=>{e.preventDefault();document.getElementById('contactForm').style.display='none';document.getElementById('contactSuccess').style.display='block'};
 
-function handleContactForm(e){
-  e.preventDefault();
-  document.getElementById('contactForm').classList.add('hidden');
-  document.getElementById('contactSuccess').classList.remove('hidden');
-}
-
-// LEGAL
-const legalData={
-  privacy:{title:'Privacy Policy',content:`<p><strong class="text-gold/70">Effective Date:</strong> January 2025</p><p>Elon Modeling Academy ("we", "us", or "our") is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.</p><p><strong class="text-ivory/70">Information We Collect:</strong> Name, contact number, email address, city, age, and program preferences when you register or contact us.</p><p><strong class="text-ivory/70">How We Use It:</strong> To process registrations, communicate about programs, send updates, and improve our services. We do not sell or share your personal information with third parties.</p><p><strong class="text-ivory/70">Data Security:</strong> We implement appropriate security measures to protect your personal information against unauthorized access.</p><p><strong class="text-ivory/70">Contact:</strong> For any privacy concerns, email us at elonacademy@gmail.com or WhatsApp +91 62023 77003.</p>`},
-  terms:{title:'Terms & Conditions',content:`<p><strong class="text-gold/70">Effective Date:</strong> January 2025</p><p>By enrolling at Elon Modeling Academy, you agree to these terms and conditions.</p><p><strong class="text-ivory/70">Enrollment:</strong> Admission is confirmed only upon receipt of full payment and WhatsApp confirmation from our team.</p><p><strong class="text-ivory/70">Attendance:</strong> Regular attendance is mandatory. Batches run from 10 AM to 5 PM as scheduled.</p><p><strong class="text-ivory/70">Code of Conduct:</strong> Students are expected to maintain discipline, respect fellow students and faculty, and adhere to the Academy's standards of professionalism.</p><p><strong class="text-ivory/70">Photographs & Media:</strong> The Academy may use student photographs and videos for promotional purposes with consent.</p><p><strong class="text-ivory/70">Amendments:</strong> We reserve the right to modify these terms at any time. Continued enrollment constitutes acceptance.</p>`},
-  refund:{title:'Refund Policy',content:`<p><strong class="text-gold/70">Effective Date:</strong> January 2025</p><p>Elon Modeling Academy maintains a structured refund policy to ensure fairness to all students.</p><p><strong class="text-ivory/70">Before Course Commencement:</strong> A full refund, less a 10% administrative fee, will be processed if withdrawal is requested at least 7 days before the batch begins.</p><p><strong class="text-ivory/70">After Course Commencement:</strong> No refund will be issued once a batch has commenced and training has begun.</p><p><strong class="text-ivory/70">Course Cancellation by Academy:</strong> In the rare event that the Academy cancels a batch, a full refund will be provided to all enrolled students.</p><p><strong class="text-ivory/70">Refund Process:</strong> Approved refunds will be processed within 7-10 business days to the original payment method.</p><p>For queries, contact: elonacademy@gmail.com or WhatsApp +91 62023 77003.</p>`}
-};
-function openModal(t){const d=legalData[t];document.getElementById('legalTitle').textContent=d.title;document.getElementById('legalContent').innerHTML=d.content;document.getElementById('legalModal').classList.add('active');document.body.style.overflow='hidden'}
-function closeModal(){document.getElementById('legalModal').classList.remove('active');document.body.style.overflow=''}
-document.getElementById('legalModal').addEventListener('click',e=>{if(e.target===document.getElementById('legalModal'))closeModal()});
+// LIGHTBOX
+const openLightbox=(src,cap)=>{document.getElementById('lbImg').src=src;document.getElementById('lbCap').textContent=cap;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden'};
+const closeLightbox=()=>{document.getElementById('lightbox').classList.remove('open');document.body.style.overflow=''};
 
 // PROFILES
 const profiles={
-  shivani:`<div class="flex items-start gap-6 mb-8"><div class="w-28 h-28 flex-shrink-0 flex items-center justify-center border border-gold/40" style="background:linear-gradient(135deg,rgba(232,113,154,.12),transparent)"><span class="font-display text-5xl font-light gold-grad">S</span></div><div><div class="section-label mb-1" style="font-size:.6rem">Lead Instructor · Professional Model</div><h3 class="font-display text-3xl font-light text-ivory mb-2">Shivani Soni</h3><div class="flex gap-2 flex-wrap"><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">Runway</span><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">Catwalk</span><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">Grooming</span><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">Stage Presence</span></div></div></div><div class="gold-line mb-6"></div><p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed mb-4" style="letter-spacing:.05em">Shivani Soni is a celebrated professional model whose journey from aspiring student to accomplished runway professional is itself an inspiring story of dedication and transformation.</p><p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed mb-4" style="letter-spacing:.05em">With firsthand experience at major fashion events, competitions, and photoshoots across Bihar and beyond, Shivani brings an authentic industry perspective to every training session at Elon Modeling Academy.</p><p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed" style="letter-spacing:.05em">Her expertise spans ramp walk mechanics, expression training, camera presence, and holistic grooming — making her the definitive guide for students aiming to make their mark in India's modeling industry.</p><div class="mt-6 grid grid-cols-3 gap-4"><div class="text-center border border-gold/10 p-3"><div class="font-display text-2xl font-light gold-grad">∞</div><div class="section-label mt-1" style="font-size:.5rem">Events</div></div><div class="text-center border border-gold/10 p-3"><div class="font-display text-2xl font-light gold-grad">Pro</div><div class="section-label mt-1" style="font-size:.5rem">Model</div></div><div class="text-center border border-gold/10 p-3"><div class="font-display text-2xl font-light gold-grad">Bihar</div><div class="section-label mt-1" style="font-size:.5rem">Based</div></div></div>`,
-  rajveer:`<div class="flex items-start gap-6 mb-8"><div class="w-28 h-28 flex-shrink-0 flex items-center justify-center border border-gold/40" style="background:linear-gradient(135deg,rgba(232,113,154,.12),transparent)"><span class="font-display text-5xl font-light gold-grad">R</span></div><div><div class="section-label mb-1" style="font-size:.6rem">Master Trainer · RDF Sasaram</div><h3 class="font-display text-3xl font-light text-ivory mb-2">Rajveer</h3><div class="flex gap-2 flex-wrap"><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">15 Years</span><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">Ramp Walk</span><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">Pageants</span><span class="border border-gold/20 text-gold/60 font-sans text-xs px-3 py-1">Choreography</span></div></div></div><div class="gold-line mb-6"></div><p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed mb-4" style="letter-spacing:.05em">With a distinguished career spanning 15 years at RDF Sasaram, Rajveer stands as one of the most experienced and revered modeling trainers in Bihar. His expertise has shaped hundreds of models who have gone on to perform at regional and national levels.</p><p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed mb-4" style="letter-spacing:.05em">Rajveer's training methodology is rooted in classical discipline — perfect posture, impeccable timing, and unwavering stage confidence. He has been a key figure in organising multiple fashion events and competitions across the state.</p><p class="font-sans font-thin text-ivory/50 text-sm leading-relaxed" style="letter-spacing:.05em">At Elon Modeling Academy, Rajveer brings this generational mastery to Varanasi, mentoring the next wave of India's modeling talent with the same passion and precision that defines his legendary career.</p><div class="mt-6 grid grid-cols-3 gap-4"><div class="text-center border border-gold/10 p-3"><div class="font-display text-2xl font-light gold-grad">15</div><div class="section-label mt-1" style="font-size:.5rem">Years Exp.</div></div><div class="text-center border border-gold/10 p-3"><div class="font-display text-2xl font-light gold-grad">RDF</div><div class="section-label mt-1" style="font-size:.5rem">Sasaram</div></div><div class="text-center border border-gold/10 p-3"><div class="font-display text-2xl font-light gold-grad">Bihar</div><div class="section-label mt-1" style="font-size:.5rem">Legend</div></div></div>`
+  shivani:`<div style="display:flex;gap:1.5rem;align-items:flex-start;margin-bottom:2rem"><div style="width:90px;height:90px;flex-shrink:0;border:1px solid rgba(255,61,138,.4);display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(255,61,138,.12),transparent);font-family:'Cormorant Garamond',serif;font-size:3rem;color:transparent;background-image:linear-gradient(135deg,#FF3D8A,#FF79B0);-webkit-background-clip:text;background-clip:text">S</div><div><div style="font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,121,176,.9);margin-bottom:.4rem">Lead Instructor · Professional Model</div><h3 style="font-size:2rem;margin-bottom:.75rem">Shivani Soni</h3><div style="display:flex;gap:.5rem;flex-wrap:wrap"><span style="border:1px solid rgba(255,61,138,.25);color:rgba(255,121,176,.7);font-size:.7rem;padding:.2rem .6rem">Runway</span><span style="border:1px solid rgba(255,61,138,.25);color:rgba(255,121,176,.7);font-size:.7rem;padding:.2rem .6rem">Catwalk</span><span style="border:1px solid rgba(255,61,138,.25);color:rgba(255,121,176,.7);font-size:.7rem;padding:.2rem .6rem">Grooming</span></div></div></div><hr style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(255,61,138,.3),transparent);margin-bottom:1.5rem"/><p style="margin-bottom:1rem">Shivani Soni is a celebrated professional model whose journey from aspiring student to accomplished runway professional is an inspiring story of dedication and transformation.</p><p style="margin-bottom:1rem">With firsthand experience at major fashion events across Bihar and beyond, she brings an authentic industry perspective to every training session at Elon Modeling Academy.</p><p>Her expertise spans ramp walk mechanics, expression training, camera presence, and holistic grooming — the definitive guide for students aiming to make their mark in India's modeling industry.</p>`,
+  rajveer:`<div style="display:flex;gap:1.5rem;align-items:flex-start;margin-bottom:2rem"><div style="width:90px;height:90px;flex-shrink:0;border:1px solid rgba(255,61,138,.4);display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(255,61,138,.12),transparent);font-family:'Cormorant Garamond',serif;font-size:3rem;color:transparent;background-image:linear-gradient(135deg,#FF3D8A,#FF79B0);-webkit-background-clip:text;background-clip:text">R</div><div><div style="font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,121,176,.9);margin-bottom:.4rem">Master Trainer · RDF Sasaram</div><h3 style="font-size:2rem;margin-bottom:.75rem">Rajveer</h3><div style="display:flex;gap:.5rem;flex-wrap:wrap"><span style="border:1px solid rgba(255,61,138,.25);color:rgba(255,121,176,.7);font-size:.7rem;padding:.2rem .6rem">15 Years</span><span style="border:1px solid rgba(255,61,138,.25);color:rgba(255,121,176,.7);font-size:.7rem;padding:.2rem .6rem">Ramp Walk</span><span style="border:1px solid rgba(255,61,138,.25);color:rgba(255,121,176,.7);font-size:.7rem;padding:.2rem .6rem">Pageants</span></div></div></div><hr style="border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(255,61,138,.3),transparent);margin-bottom:1.5rem"/><p style="margin-bottom:1rem">With 15 distinguished years at RDF Sasaram, Rajveer stands as one of the most experienced and revered modeling trainers in Bihar, shaping hundreds of models who have performed at regional and national levels.</p><p style="margin-bottom:1rem">His training methodology is rooted in classical discipline — perfect posture, impeccable timing, and unwavering stage confidence. He has been key in organising multiple fashion events across Bihar.</p><p>At Elon Modeling Academy, Rajveer brings this generational mastery to Varanasi, mentoring the next wave of India's modeling talent with passion and precision.</p>`
 };
-function openProfile(id){document.getElementById('profileContent').innerHTML=profiles[id];document.getElementById('profileOverlay').classList.add('active');document.body.style.overflow='hidden'}
-function closeProfile(){document.getElementById('profileOverlay').classList.remove('active');document.body.style.overflow=''}
-document.getElementById('profileOverlay').addEventListener('click',e=>{if(e.target===document.getElementById('profileOverlay'))closeProfile()});
+const openProfile=id=>{document.getElementById('profContent').innerHTML=profiles[id];document.getElementById('profModal').classList.add('open');document.body.style.overflow='hidden'};
+const closeProfile=()=>{document.getElementById('profModal').classList.remove('open');document.body.style.overflow=''};
 
-// LIGHTBOX
-function openLightbox(src,caption){document.getElementById('lightboxImg').src=src;document.getElementById('lightboxCaption').textContent=caption;document.getElementById('lightbox').style.display='flex';document.body.style.overflow='hidden'}
-function closeLightbox(){document.getElementById('lightbox').style.display='none';document.body.style.overflow=''}
-
-// NAV SCROLL
-window.addEventListener('scroll',()=>{document.querySelector('nav').style.backdropFilter=window.scrollY>50?'blur(30px)':'blur(20px)'});
+// LEGAL
+const legalData={
+  privacy:{title:'Privacy Policy',html:`<p><strong style="color:rgba(255,121,176,.8)">Effective Date: January 2025</strong></p><p>Elon Modeling Academy is committed to protecting your personal information. We collect Name, contact number, email, city, age, and program preferences when you register or contact us. We do not sell or share your data with third parties.</p><p>For any privacy concerns, email elonacademy@gmail.com or WhatsApp +91 62023 77003.</p>`},
+  terms:{title:'Terms & Conditions',html:`<p><strong style="color:rgba(255,121,176,.8)">Effective Date: January 2025</strong></p><p>By enrolling, admission is confirmed only upon receipt of full payment and WhatsApp confirmation. Regular attendance is mandatory; batches run 10 AM to 5 PM. Students must maintain discipline and professionalism. The Academy may use student photos/videos for promotional purposes with consent.</p>`},
+  refund:{title:'Refund Policy',html:`<p><strong style="color:rgba(255,121,176,.8)">Effective Date: January 2025</strong></p><p><strong style="color:rgba(255,240,246,.7)">Before Commencement:</strong> Full refund less 10% admin fee if withdrawal is requested 7+ days before batch begins.</p><p><strong style="color:rgba(255,240,246,.7)">After Commencement:</strong> No refund once training has begun.</p><p><strong style="color:rgba(255,240,246,.7)">Academy Cancellation:</strong> Full refund provided if we cancel a batch. Refunds processed in 7–10 business days. Contact: elonacademy@gmail.com</p>`}
+};
+const openLegal=t=>{const d=legalData[t];document.getElementById('legalTitle').textContent=d.title;document.getElementById('legalContent').innerHTML=d.html;document.getElementById('legalModal').classList.add('open');document.body.style.overflow='hidden'};
+const closeLegal=()=>{document.getElementById('legalModal').classList.remove('open');document.body.style.overflow=''};
 </script>
 </body>
 </html>
